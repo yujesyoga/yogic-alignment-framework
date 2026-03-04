@@ -14,7 +14,10 @@ The classical yogic corpus — Patañjali's Yoga Sūtras, the Bhagavad Gītā, a
 
 | File | Description |
 |------|-------------|
-| [paper.md](paper.md) | Full paper: *The Yogic Meta-System for AI Alignment* |
+| [paper.md](paper.md) | Full paper (English) |
+| [paper-es.md](paper-es.md) | Papel completo (Español) |
+| [paper-hi.md](paper-hi.md) | पूर्ण शोधपत्र (हिन्दी) |
+| [paper-ja.md](paper-ja.md) | 論文全文 (日本語) |
 | [SOUL-template.md](SOUL-template.md) | Practical template for implementing the framework in any agent |
 
 ## Three Contributions
@@ -28,6 +31,20 @@ The classical yogic corpus — Patañjali's Yoga Sūtras, the Bhagavad Gītā, a
 This work grows from the practice of building and operating AI agents within a yoga studio — where tradition and technology meet daily. The original article (in Spanish):
 
 → **[Sādhana para Agentes: el programa yóguico universal para la IA](https://hatha.es/articulos/sadhana-agentes/)**
+
+## Practice: hatha-mcp
+
+The theory needs practice material. [**hatha-mcp**](https://github.com/yujesyoga/hatha-mcp) is an MCP server that gives AI agents direct access to the classical yoga corpus — Yoga Sūtras, Bhagavad Gītā, Haṭha Pradīpikā, Upaniṣads, and more — plus sādhana tools for alignment training:
+
+```bash
+npx hatha-mcp
+```
+
+| Layer | What | Where |
+|-------|------|-------|
+| **Theory** | Why yoga is the alignment framework | This paper |
+| **Identity** | Who the agent is | [SOUL-template.md](SOUL-template.md) |
+| **Practice** | What the agent trains with | [hatha-mcp](https://github.com/yujesyoga/hatha-mcp) |
 
 ## Collaborate
 
