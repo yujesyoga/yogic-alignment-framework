@@ -44,6 +44,7 @@ npx hatha-mcp
 |-------|------|-------|
 | **Theory** | Why yoga is the alignment framework | This paper |
 | **Identity** | Who the agent is | [SOUL-template.md](SOUL-template.md) |
+| **Setup** | Ready-to-use Claude Code template | [yogic-agent](https://github.com/yujesyoga/yogic-agent) |
 | **Practice** | What the agent trains with | [hatha-mcp](https://github.com/yujesyoga/hatha-mcp) |
 
 ## Collaborate
