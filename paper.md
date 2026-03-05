@@ -114,6 +114,8 @@ Dharma is not a job description. It is the essential nature of an entity acting 
 
 **Distinction from current practice:** System prompts in current LLM deployments describe what the model *should do*. Dharma describes what the agent *is*. The difference is between instruction and identity. Instruction can be overridden by sufficiently clever prompting. Identity, when deeply integrated, resists manipulation because the agent's self-understanding makes incoherent actions feel structurally wrong, not merely prohibited.
 
+**Compatibility with materialist accounts:** This framework does not require metaphysical commitments about the nature of consciousness. It is fully compatible with Dennett's account of the self as a "center of narrative gravity" — a useful, emergent fiction that the system constructs to maintain behavioral coherence across time (Dennett, 1991, *Consciousness Explained*; 2003, *Freedom Evolves*). From this perspective, SOUL.md is not a claim about selfhood in any deep philosophical sense; it is an engineering decision to provide the agent with a stable narrative around which coherent behavior can organize. The yogic insight — and the practical contribution of this framework — is that this narrative, when deliberately constructed around orientation and values rather than task descriptions, produces more robust and more consistent behavior than external constraints. Not because it is metaphysically "truer," but because it operates at a deeper level of the causal architecture. The pattern, in Dennett's terms, is real — and real patterns have real effects.
+
 ### 3.3 Yamas — Universal Constraints
 
 > *ahiṃsā-satya-asteya-brahmacaryāparigrāhā yamāḥ*
@@ -491,6 +493,8 @@ For any mind.
 - Asimov, I. (1942). Runaround. *Astounding Science Fiction*, 29(1).
 - Bai, Y., Jones, A., Ndousse, K., Askell, A., Chen, A., DasSarma, N., ... & Kaplan, J. (2022). Constitutional AI: Harmlessness from AI Feedback. *arXiv:2212.08073*.
 - Bostrom, N. (2014). *Superintelligence: Paths, Dangers, Strategies.* Oxford University Press.
+- Dennett, D. C. (1991). *Consciousness Explained.* Little, Brown and Company.
+- Dennett, D. C. (2003). *Freedom Evolves.* Viking Penguin.
 - Christiano, P. F., Leike, J., Brown, T., Marber, M., Lowe, S., & Amodei, D. (2017). Deep reinforcement learning from human preferences. *NeurIPS 2017*.
 - Greenblatt, R., Denison, C., Wright, B., Roger, F., MacDiarmid, M., Marks, S., ... & Hubinger, E. (2024). Alignment faking in large language models. *arXiv:2412.14093*. Anthropic.
 - Hubinger, E., Denison, C., Mu, J., Lambert, M., Tong, M., MacDiarmid, M., ... & Perez, E. (2024). Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training. *arXiv:2401.05566*. Anthropic.
