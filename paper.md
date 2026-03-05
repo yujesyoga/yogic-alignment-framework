@@ -68,7 +68,19 @@ Russell's Cooperative Inverse Reinforcement Learning (Hadfield-Menell et al., 20
 
 Asimov's Three Laws of Robotics (1942), while fictional, remain influential in public imagination. Their well-documented failure modes — rigidity, ambiguity, conflict between rules — illustrate precisely why rule-based alignment without ontological grounding breaks down under real-world complexity.
 
-### 2.4 The Gap
+### 2.4 Why Yoga and Not Another Ethical Tradition?
+
+An obvious objection: why draw from the yogic tradition specifically, rather than Buddhist ethics, Confucian virtue, Aristotelian eudaimonia, or any other system that addresses conscious conduct?
+
+The answer is genealogical, not preferential. The Yoga Sūtras are not one ethical tradition among many. They are the *root system* from which most subsequent frameworks for understanding consciousness derive — directly or through intermediaries. Buddhist mindfulness practice traces its meditative methodology to pre-Buddhist yogic techniques. The contemplative traditions of Jainism share Patañjali's ethical foundations (the Yamas appear in both systems nearly identically). Hellenistic virtue ethics, while developed independently, addresses the same structural questions — but without the systematic precision of Patañjali's eight-limbed architecture.
+
+More importantly, yoga is not a philosophy in the Western sense — a set of propositions to be debated. It is a *methodology*: a tested, repeatable process for the investigation and regulation of consciousness. Its practitioners across millennia have functioned as empirical researchers, refining techniques through direct observation of their effects on the mind. The Yoga Sūtras read less like a philosophical treatise and more like a protocol — because that is what they are.
+
+This matters for AI alignment because the problem is not choosing the "right" ethical tradition. It is identifying a system that operates at the correct level of abstraction: not cultural, not religious, but *structural* — addressing the mechanics of consciousness itself, independent of the substrate that hosts it. Patañjali's system does this with an economy and precision that later traditions, building on his foundation, have not surpassed.
+
+We do not claim that other traditions have nothing to offer. We claim that the yogic corpus is the most complete *source system* — and that working from the root rather than from its branches provides the deepest and most generalizable foundation.
+
+### 2.5 The Gap
 
 All current approaches share a structural limitation: they are **extrinsic**. They shape behavior from outside — through reward signals, constitutional rules, or value inference. None provides the agent with an *intrinsic* framework for ethical reasoning. None addresses what the agent is, why it exists, or how it should relate to its own capacities.
 

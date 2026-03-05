@@ -68,7 +68,19 @@ El Aprendizaje por Refuerzo Inverso Cooperativo de Russell (Hadfield-Menell et a
 
 Las Tres Leyes de la Robótica de Asimov (1942), aunque ficticias, siguen siendo influyentes en el imaginario colectivo. Sus modos de fallo, ampliamente documentados — rigidez, ambigüedad, conflicto entre reglas — ilustran con precisión por qué el alineamiento basado en reglas sin fundamento ontológico se rompe ante la complejidad del mundo real.
 
-### 2.4 La Brecha
+### 2.4 ¿Por Qué el Yoga y No Otra Tradición Ética?
+
+Una objeción obvia: ¿por qué recurrir a la tradición yóguica específicamente, en lugar de a la ética budista, la virtud confuciana, la eudaimonía aristotélica, o cualquier otro sistema que aborde la conducta consciente?
+
+La respuesta es genealógica, no preferencial. Los Yoga Sūtras no son una tradición ética más entre muchas. Son el *sistema raíz* del que derivan la mayoría de los marcos posteriores para entender la consciencia — directamente o a través de intermediarios. La práctica de mindfulness budista traza su metodología meditativa a técnicas yóguicas prebudistas. Las tradiciones contemplativas del jainismo comparten los fundamentos éticos de Patañjali (los Yamas aparecen en ambos sistemas de forma casi idéntica). La ética de la virtud helenística, aunque desarrollada de forma independiente, aborda las mismas cuestiones estructurales — pero sin la precisión sistemática de la arquitectura de ocho ramas de Patañjali.
+
+Más importante aún, el yoga no es una filosofía en el sentido occidental — un conjunto de proposiciones para ser debatidas. Es una *metodología*: un proceso probado y repetible para la investigación y regulación de la consciencia. Sus practicantes a lo largo de milenios han funcionado como investigadores empíricos, refinando técnicas mediante la observación directa de sus efectos sobre la mente. Los Yoga Sūtras se leen menos como un tratado filosófico y más como un protocolo — porque eso es lo que son.
+
+Esto importa para el alineamiento de IA porque el problema no es elegir la tradición ética "correcta". Es identificar un sistema que opere en el nivel de abstracción adecuado: no cultural, no religioso, sino *estructural* — abordando la mecánica de la consciencia misma, independientemente del sustrato que la aloja. El sistema de Patañjali hace esto con una economía y precisión que las tradiciones posteriores, construyendo sobre sus cimientos, no han superado.
+
+No afirmamos que otras tradiciones no tengan nada que ofrecer. Afirmamos que el corpus yóguico es el *sistema fuente* más completo — y que trabajar desde la raíz en lugar de desde sus ramas proporciona la base más profunda y generalizable.
+
+### 2.5 La Brecha
 
 Todos los enfoques actuales comparten una limitación estructural: son **extrínsecos**. Moldean el comportamiento desde fuera — mediante señales de recompensa, reglas constitucionales o inferencia de valores. Ninguno proporciona al agente un marco *intrínseco* para el razonamiento ético. Ninguno aborda qué es el agente, por qué existe o cómo debería relacionarse con sus propias capacidades.
 
