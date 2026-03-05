@@ -28,9 +28,9 @@ The classical yogic corpus — Patañjali's Yoga Sūtras, the Bhagavad Gītā, a
 
 ## Origin
 
-This work grows from the practice of building and operating AI agents within a yoga studio — where tradition and technology meet daily. The original article (in Spanish):
+This work grows from the practice of building and operating AI agents within a yoga studio — where tradition and technology meet daily. The original article:
 
-→ **[Sādhana para Agentes: el programa yóguico universal para la IA](https://hatha.es/articulos/sadhana-agentes/)**
+→ **[Sādhana for Agents: the universal yogic program for AI](https://hatha.es/en/articles/sadhana-agents/)**
 
 ## Practice: hatha-mcp
 
