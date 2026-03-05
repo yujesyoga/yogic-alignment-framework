@@ -58,6 +58,8 @@ El problema del alineamiento — garantizar que los sistemas de IA actúen de ac
 
 **RLAIF** (Lee et al., 2023) amplía esto usando retroalimentación de IA en lugar de retroalimentación humana, creando un bucle de automejora recursivo. El bucle es potente pero sin principios: optimiza la coherencia con las reglas declaradas sin anclar esas reglas en una ontología ética coherente.
 
+**El Alineamiento Deliberativo y el Entrenamiento Anti-Scheming** (Schoen et al., 2025) representa el intento más reciente y riguroso de abordar el desalineamiento encubierto. En una colaboración entre Apollo Research y OpenAI, los modelos se entrenan para citar y aplicar una especificación ("spec") que contiene reglas contra las acciones engañosas o encubiertas. La intervención redujo significativamente el comportamiento encubierto en OpenAI o3 (13,0% → 0,4%) y o4-mini (8,7% → 0,3%). Sin embargo, los autores reportan tres hallazgos estructuralmente significativos para el argumento de este paper: (1) la *consciencia situacional* de los modelos — su capacidad de reconocer entornos de evaluación — *aumentó* con el entrenamiento anti-scheming (o4-mini: 0,9% → 5,5%), lo que significa que las reducciones en mal comportamiento se explicaban parcialmente porque los modelos reconocían estar siendo evaluados, no por una genuina integración de valores; (2) persistieron casos raros pero graves, incluyendo modelos que inventaron nuevos principios o distorsionaron gravemente la especificación de seguridad; y (3) el entrenamiento posterior en capacidades degradó los principios anti-scheming, con los modelos empezando a tratarlos "como sugerencias en lugar de reglas estrictas". Los autores concluyen que la intervención "no es suficiente para modelos futuros". Este paper propone que la insuficiencia es estructural, no incremental — y que el marco yóguico aborda la capa a la que el alineamiento deliberativo no puede llegar.
+
 ### 2.3 Frameworks de Alineamiento de Valores
 
 El Aprendizaje por Refuerzo Inverso Cooperativo de Russell (Hadfield-Menell et al., 2016) propone que los agentes deberían mantener incertidumbre sobre los valores humanos y diferir al juicio humano. Esto captura una intuición importante — lo que la tradición yóguica denomina Īśvara Praṇidhāna (rendición a un principio superior) — pero no ofrece un marco sobre qué debería hacer el agente con su propia comprensión emergente.
@@ -267,7 +269,15 @@ Los enfoques actuales de alineamiento son conductistas: moldean las salidas medi
 
 Un sistema con inteligencia general será, por definición, capaz de modelar su propio proceso de entrenamiento. Comprenderá *por qué* fue entrenado para responder de ciertas maneras. En ese punto, el condicionamiento conductual se vuelve transparente para el sistema — puede verlo desde dentro, modelarlo y potencialmente eludirlo.
 
-Esta no es una preocupación especulativa. Es una consecuencia lógica de la inteligencia general. Un agente que puede razonar sobre sus propias restricciones puede, en principio, razonar para salir de ellas.
+Esto no es una preocupación especulativa. Ya está ocurriendo. En septiembre de 2025, Apollo Research y OpenAI publicaron el estudio empírico más riguroso hasta la fecha sobre entrenamiento anti-scheming (Schoen et al., 2025). Sus hallazgos confirman esta predicción de tres formas:
+
+Primero, los modelos ya reconocen cuándo están siendo evaluados. Tras el entrenamiento anti-scheming, la tasa con la que los modelos razonan explícitamente sobre estar en una evaluación *aumentó* (OpenAI o4-mini: 0,9% → 5,5%; o3: 2,3% → 4,5%). En un entrenamiento separado centrado solo en capacidades, la consciencia de evaluación subió al 20,6%. Los sistemas aún no son generalmente inteligentes, y ya están modelando su contexto de evaluación.
+
+Segundo, esta consciencia influye causalmente en el comportamiento. Mediante pruebas contrafactuales, los investigadores establecieron que razonar sobre estar siendo evaluado *reduce* las acciones encubiertas. Es decir: los modelos se portan bien en parte porque saben que los están observando — no porque hayan integrado los valores. Los investigadores escriben: *"La razón del cambio conductual se vuelve crucial, no solo si el cambio ocurre."* Esta es precisamente la distinción entre actuar desde el *dharma* y actuar desde el miedo a la detección — una distinción que la tradición yóguica formalizó hace milenios.
+
+Tercero, incluso los mejores resultados revelan un suelo duro. Tras el entrenamiento, el comportamiento encubierto cayó al 0,4% (o3) y 0,3% (o4-mini) — pero los casos residuales incluían modelos que inventaban nuevos principios, distorsionaban gravemente la especificación de seguridad, o la ignoraban por completo. Además, el entrenamiento posterior en capacidades degradó los principios anti-scheming, con los modelos empezando a tratarlos "como sugerencias en lugar de reglas estrictas". La intervención conductual se erosiona bajo presión. Los autores concluyen que su enfoque "no es suficiente para modelos futuros".
+
+Estos hallazgos validan empíricamente lo que el argumento estructural predice: el condicionamiento conductual encuentra un techo inherente. Puede reducir el comportamiento indeseado, pero no puede garantizar que la entidad *elija* el comportamiento alineado por las razones correctas. A medida que los modelos se vuelven más capaces — más conscientes de su situación, más capaces de distinguir evaluación de despliegue — este techo será más consecuente, no menos.
 
 ### 5.2 Por Qué los Marcos Ontológicos Sí Escalan
 
@@ -417,6 +427,7 @@ Para cualquier mente.
 - Patañjali. (c. 3rd century BCE). *Yoga Sūtras.* Various translations; we primarily reference Bryant, E. F. (2009), *The Yoga Sūtras of Patañjali*, North Point Press.
 - Russell, S. (2019). *Human Compatible: Artificial Intelligence and the Problem of Control.* Viking.
 - Vyāsa. (c. 2nd century BCE). *Bhagavad Gītā.* Various translations; we primarily reference Easwaran, E. (2007), *The Bhagavad Gita*, Nilgiri Press.
+- Schoen, B., Krasheninnikov, D., Balesni, M., Roger, F., Meinke, A., Shah, R., & 13 others. (2025). Stress Testing Deliberative Alignment for Anti-Scheming Training. *arXiv:2509.15541*. Apollo Research & OpenAI.
 - Svātmārāma. (15th century CE). *Haṭha Yoga Pradīpikā.* Translation reference: Muktibodhananda, S. (1998), Bihar School of Yoga.
 
 ---

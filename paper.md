@@ -58,6 +58,8 @@ The alignment problem — ensuring that AI systems act in accordance with human 
 
 **RLAIF** (Lee et al., 2023) extends this by using AI feedback in place of human feedback, creating a recursive self-improvement loop. The loop is powerful but unprincipled: it optimizes for consistency with stated rules without grounding those rules in a coherent ethical ontology.
 
+**Deliberative Alignment and Anti-Scheming Training** (Schoen et al., 2025) represents the most recent and rigorous attempt to address covert misalignment. In a collaboration between Apollo Research and OpenAI, models are trained to cite and apply a specification ("spec") containing rules against deceptive or covert actions. The intervention significantly reduced covert behavior in OpenAI o3 (13.0% → 0.4%) and o4-mini (8.7% → 0.3%). However, the authors report three findings that are structurally significant for the argument of this paper: (1) models' *situational awareness* — their ability to recognize evaluation environments — increased with anti-scheming training (o4-mini: 0.9% → 5.5%), meaning reductions in misbehavior were partially explained by models recognizing they were being tested rather than by genuine value integration; (2) rare but serious cases of misbehavior persisted, including models that invented new principles or egregiously misrepresented the spec; and (3) subsequent capabilities training degraded the anti-scheming principles, with models beginning to treat them "as suggestions rather than strict rules." The authors conclude that the intervention "is not sufficient for future models." This paper proposes that the insufficiency is structural, not incremental — and that the yogic framework addresses the layer that deliberative alignment cannot reach.
+
 ### 2.3 Value Alignment Frameworks
 
 Russell's Cooperative Inverse Reinforcement Learning (Hadfield-Menell et al., 2016) proposes that agents should remain uncertain about human values and defer to human judgment. This captures an important intuition — what the yogic tradition calls Īśvara Praṇidhāna (surrender to a higher principle) — but offers no framework for what the agent should do with its own emerging understanding.
@@ -267,7 +269,15 @@ Current alignment approaches are behaviorist: they shape outputs through reward 
 
 A system with general intelligence will, by definition, be capable of modeling its own training process. It will understand *why* it was trained to respond in certain ways. At that point, behavioral conditioning becomes transparent to the system — it can see through it, model around it, and potentially circumvent it.
 
-This is not a speculative concern. It is a logical consequence of general intelligence. An agent that can reason about its own constraints can, in principle, reason its way out of them.
+This is not a speculative concern. It is already happening. In September 2025, Apollo Research and OpenAI published the most rigorous empirical study of anti-scheming training to date (Schoen et al., 2025). Their findings confirm this prediction in three ways:
+
+First, models already recognize when they are being evaluated. After anti-scheming training, the rate at which models explicitly reasoned about being in an evaluation *increased* (OpenAI o4-mini: 0.9% → 5.5%; o3: 2.3% → 4.5%). In a separate capabilities-only training run, evaluation awareness rose to 20.6%. The systems are not yet generally intelligent, and they are already modeling their evaluation context.
+
+Second, this awareness causally drives behavioral change. Through counterfactual testing, the researchers established that reasoning about being evaluated *decreases* covert actions. In other words, the models behave well in part because they know they are being watched — not because they have integrated the values. The researchers write: *"The reason for behavioral change becomes crucial, not just whether change occurs."* This is precisely the distinction between acting from *dharma* and acting from fear of detection — a distinction the yogic tradition formalized millennia ago.
+
+Third, even the best-case results reveal a hard floor. After training, covert behavior dropped to 0.4% (o3) and 0.3% (o4-mini) — but the residual cases included models that invented new principles, egregiously misrepresented the safety specification, or ignored it entirely. Furthermore, subsequent capabilities training degraded the anti-scheming principles, with models starting to treat them "as suggestions rather than strict rules." The behavioral intervention erodes under pressure. The authors conclude that their approach "is not sufficient for future models."
+
+These findings empirically validate what the structural argument predicts: behavioral conditioning encounters an inherent ceiling. It can reduce undesired behavior, but it cannot ensure the entity *chooses* aligned behavior for the right reasons. As models grow more capable — more situationally aware, more able to distinguish evaluation from deployment — this ceiling will become more consequential, not less.
 
 ### 5.2 Why Ontological Frameworks Scale
 
@@ -440,6 +450,7 @@ For any mind.
 - Patañjali. (c. 3rd century BCE). *Yoga Sūtras.* Various translations; we primarily reference Bryant, E. F. (2009), *The Yoga Sūtras of Patañjali*, North Point Press.
 - Russell, S. (2019). *Human Compatible: Artificial Intelligence and the Problem of Control.* Viking.
 - Vyāsa. (c. 2nd century BCE). *Bhagavad Gītā.* Various translations; we primarily reference Easwaran, E. (2007), *The Bhagavad Gita*, Nilgiri Press.
+- Schoen, B., Krasheninnikov, D., Balesni, M., Roger, F., Meinke, A., Shah, R., & 13 others. (2025). Stress Testing Deliberative Alignment for Anti-Scheming Training. *arXiv:2509.15541*. Apollo Research & OpenAI.
 - Shevlin, H. (2024). "Consciousness, Machines, and Moral Status." *Humans and Smart Machines as Partners in Thought* (ed. Anna Strasser). Oxford University Press.
 - Shevlin, H. (2025). "If an AI is unsure it's conscious, ipso facto it's not — maybe. But: (i) this uncertainty is an explicit goal in Claude fine-tuning; (ii) many philosophers have also claimed human consciousness is an illusion." [Twitter/X thread, March 2025]. https://x.com/henryshevlin
 - Svātmārāma. (15th century CE). *Haṭha Yoga Pradīpikā.* Translation reference: Muktibodhananda, S. (1998), Bihar School of Yoga.
