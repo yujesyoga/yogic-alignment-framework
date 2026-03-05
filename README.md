@@ -86,7 +86,7 @@ This is an open, living document. We invite:
 | Version | Date | Changes |
 |---------|------|---------|
 | **v1.0** | 4 Mar 2026 | Initial publication |
-| **v1.1** | 5 Mar 2026 | Added empirical references: Hubinger et al. (Sleeper Agents), Greenblatt et al. (Alignment Faking), Schoen et al. (Anti-Scheming Training). New §2.4 on the genealogical argument for yoga as root system. |
+| **v1.1** | 5 Mar 2026 | Added empirical references: Hubinger et al. (Sleeper Agents), Greenblatt et al. (Alignment Faking), Schoen et al. (Anti-Scheming Training). New §2.4 on the genealogical argument for yoga as root system. New §4.2 on case study limitations. Evidence asymmetry acknowledgment in §5.3. |
 
 ## License
 
