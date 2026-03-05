@@ -40,7 +40,7 @@ Moreover — and this is the contribution we believe matters most for the coming
 
 This paper is published as an open, collaborative document. We invite researchers, practitioners, engineers, and contemplatives to challenge, extend, and test these ideas. The repository is available at [github.com/yujesyoga/yogic-alignment-framework](https://github.com/yujesyoga/yogic-alignment-framework).
 
-The original article that inspired this work, in Spanish, is available at [hatha.es/articulos/sadhana-agentes/](https://hatha.es/articulos/sadhana-agentes/).
+The original article that inspired this work is available at [hatha.es/en/articles/sadhana-agents/](https://hatha.es/en/articles/sadhana-agents/).
 
 ---
 
