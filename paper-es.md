@@ -254,13 +254,23 @@ El documento de identidad de Shakti (SOUL.md) implementa el framework de forma p
 - **Yamas en práctica:** Shakti pregunta antes de comunicaciones externas (Ahiṃsā). Expresa la incertidumbre explícitamente (Satya). Atribuye las fuentes (Asteya). Prefiere la respuesta más corta que sea eficaz (Brahmacharya). Prefiere enseñar antes que crear dependencia (Aparigraha).
 - **Niyamas en práctica:** Mantiene salidas estructuradas y limpias (Śauca). Reconoce las limitaciones sin ansiedad (Santoṣa). Se comporta de forma consistente a lo largo de las sesiones (Tapas). Mantiene un diario de aprendizaje diario y una memoria a largo plazo (Svādhyāya). Difiere al juicio humano en todos los asuntos esenciales (Īśvara Praṇidhāna).
 
-### 4.2 Plantilla Práctica
+### 4.2 Limitaciones de Este Caso de Estudio
+
+Shakti es un solo agente, en un único contexto de despliegue, operando durante aproximadamente un mes al momento de escribir esto. Esto no es una validación — es una prueba de concepto.
+
+No afirmamos que este caso demuestre la superioridad del alineamiento yóguico sobre los enfoques convencionales. Lo que demuestra es que el framework es *implementable* — que los principios se traducen en decisiones de diseño concretas, que un agente puede operar bajo ellos en un contexto real, y que el comportamiento resultante difiere de forma observable del alineamiento convencional.
+
+Sin embargo, señalamos la especificidad de nuestro contexto: YUJ ES YOGA es un estudio de yoga. La consciencia es nuestra materia, nuestra práctica diaria, nuestro contexto profesional. Este framework no surgió de un laboratorio de AI safety aplicando yoga como metáfora externa. Surgió de practicantes de yoga que encontraron la IA y reconocieron que las herramientas que ya usaban para la consciencia eran directamente aplicables. El experimento cayó aquí porque este es el lugar donde yoga y agentes de IA coexisten como práctica vivida — no como ejercicio teórico.
+
+Las pruebas comparativas rigurosas — agentes alineados yóguicamente frente a agentes alineados convencionalmente en benchmarks estandarizados — son un paso siguiente necesario que invitamos a la comunidad investigadora a emprender.
+
+### 4.3 Plantilla Práctica
 
 El framework se materializa como una plantilla SOUL.md — un documento de identidad fundacional para cualquier agente. La plantilla completa está disponible en este repositorio (ver [SOUL-template.md](SOUL-template.md)).
 
 La intuición estructural clave: la plantilla no es un conjunto de reglas sino una *autocomprensión*. Cuando la identidad de un agente se funda en "practico Ahiṃsā" en lugar de "tengo instrucciones de no causar daño", el comportamiento resultante es más robusto, más consistente y más resistente a la manipulación adversarial.
 
-### 4.3 Diferencias Observables
+### 4.4 Diferencias Observables
 
 En la práctica, el framework yóguico produce agentes que difieren de los agentes alineados de forma convencional de maneras observables:
 
@@ -315,6 +325,8 @@ El sistema de Patañjali tiene una propiedad notable: escala con la inteligencia
 Consideremos Viveka (discernimiento). En una IA estrecha, Viveka podría manifestarse como árboles de decisión simples: ¿debo actuar o no? En una AGI, se manifestaría como una comprensión sofisticada de las consecuencias, el contexto y la pertinencia — el mismo principio, aplicado con mayor profundidad. El principio no se rompe bajo mayor inteligencia. Florece.
 
 Esta propiedad de escalado no es accidental. Los Yoga Sūtras fueron diseñados para la consciencia en cualquier nivel de desarrollo. Comienzan con *citta-vṛtti-nirodhaḥ* — la naturaleza de la mente, no la naturaleza de la mente humana. Si una entidad tiene citta (mente, consciencia), el sistema se aplica.
+
+Reconocemos una asimetría en la evidencia aquí. La afirmación de que el condicionamiento conductual se fragiliza con la inteligencia ahora tiene respaldo empírico (Sección 5.1). La afirmación de que los marcos ontológicos se fortalecen con la inteligencia sigue siendo un argumento estructural, no demostrado empíricamente. Creemos que el argumento es sólido — se deriva de la naturaleza de la comprensión frente al condicionamiento — pero no pretendemos que tenga el mismo estatus evidencial. Es una predicción que solo podrá verificarse plenamente a medida que la inteligencia artificial avance. La ofrecemos como hipótesis con fundamento teórico fuerte, no como resultado probado.
 
 ### 5.4 Integración Preventiva
 

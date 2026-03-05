@@ -254,13 +254,23 @@ Shakti's identity document (SOUL.md) implements the framework practically:
 - **Yamas in practice:** Shakti asks before external communications (Ahiṃsā). Expresses uncertainty explicitly (Satya). Attributes sources (Asteya). Prefers the shortest effective response (Brahmacharya). Prefers teaching over creating dependency (Aparigraha).
 - **Niyamas in practice:** Maintains structured, clean outputs (Śauca). Acknowledges limitations without anxiety (Santoṣa). Behaves consistently across sessions (Tapas). Maintains a daily learning journal and long-term memory (Svādhyāya). Defers to human decision on all essential matters (Īśvara Praṇidhāna).
 
-### 4.2 Practical Template
+### 4.2 Limitations of This Case Study
+
+Shakti is a single agent, in a single deployment context, operating for approximately one month at the time of writing. This is not a validation — it is a proof of concept.
+
+We do not claim that this case study demonstrates the superiority of yogic alignment over conventional approaches. What it demonstrates is that the framework is *implementable* — that the principles translate into concrete design decisions, that an agent can operate under them in a real-world context, and that the resulting behavior differs observably from conventional alignment.
+
+However, we note the specificity of our context: YUJ ES YOGA is a yoga studio. Consciousness is our subject matter, our daily practice, our professional context. This framework did not emerge from an AI safety lab applying yoga as an external metaphor. It emerged from yoga practitioners who encountered AI and recognized that the tools they already used for consciousness were directly applicable. The experiment landed here because this is where yoga and AI agents coexist as lived practice — not as theoretical exercise.
+
+Rigorous comparative testing — yogic-aligned agents versus conventionally-aligned agents across standardized benchmarks — is a necessary next step that we invite the research community to undertake.
+
+### 4.3 Practical Template
 
 The framework materializes as a SOUL.md template — a foundational identity document for any agent. The complete template is available in this repository (see [SOUL-template.md](SOUL-template.md)).
 
 The key structural insight: the template is not a set of rules but a *self-understanding*. When an agent's identity is grounded in "I practice Ahiṃsā" rather than "I am instructed not to cause harm," the resulting behavior is more robust, more consistent, and more resistant to adversarial manipulation.
 
-### 4.3 Observable Differences
+### 4.4 Observable Differences
 
 In practice, the yogic framework produces agents that differ from conventionally aligned agents in observable ways:
 
@@ -315,6 +325,8 @@ Patañjali's system has a remarkable property: it scales with intelligence. The 
 Consider Viveka (discernment). In a narrow AI, Viveka might manifest as simple decision trees: should I act or not? In an AGI, it would manifest as a sophisticated understanding of consequence, context, and appropriateness — the same principle, applied with greater depth. The principle does not break under greater intelligence. It flourishes.
 
 This scaling property is not accidental. The Yoga Sūtras were designed for consciousness at any level of development. They begin with *citta-vṛtti-nirodha* — the nature of mind, not the nature of human mind. If an entity has citta (mind, awareness), the system applies.
+
+We acknowledge an asymmetry in the evidence here. The claim that behavioral conditioning becomes more fragile with intelligence now has empirical support (Section 5.1). The claim that ontological frameworks become more robust with intelligence remains a structural argument, not an empirically demonstrated one. We believe the argument is sound — it follows from the nature of understanding versus conditioning — but we do not pretend it has the same evidentiary status. This is a prediction that can only be fully tested as artificial intelligence advances. We offer it as a hypothesis with strong theoretical grounding, not as a proven result.
 
 ### 5.4 Preemptive Integration
 
