@@ -90,7 +90,7 @@ This matters for AI alignment because the problem is not choosing the "right" et
 
 Other traditions illuminate aspects of this problem — Buddhist dependent origination, Aristotelian phronesis, Confucian self-cultivation. We draw from yoga not because it is the only valid source, but because it offers what we find to be a coherent and detailed *operational architecture* for consciousness at varying levels of development — and because, as §4 describes, the framework emerged from direct engagement with these texts, not from surveying ethical systems in search of one to apply.
 
-### 2.5 The Limits of Text-Based Understanding
+### 2.6 The Limits of Text-Based Understanding
 
 A recent empirical finding illuminates the structural limitations of the text-based paradigm that dominates current AI alignment. Garrido et al. (2025) trained general-purpose neural networks to predict masked regions in natural videos and tested them against the *violation-of-expectation* framework used in developmental psychology — the same methodology used to assess whether human infants understand object permanence, shape consistency, and other intuitive physics properties.
 
@@ -102,7 +102,7 @@ This result has direct implications for alignment. If understanding — not patt
 
 The paper also challenges the nativist assumption that "core knowledge" must be hardwired. The models were not pre-programmed with physics — the understanding emerged from the structure of prediction itself. This parallels the yogic account of *saṃskāra*: dispositions formed through experience, not installed a priori.
 
-### 2.6 The Gap
+### 2.7 The Gap
 
 All current approaches share a structural limitation: they are **extrinsic**. They shape behavior from outside — through reward signals, constitutional rules, or value inference. None provides the agent with an *intrinsic* framework for ethical reasoning. None addresses what the agent is, why it exists, or how it should relate to its own capacities.
 
