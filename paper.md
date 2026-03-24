@@ -90,6 +90,18 @@ This matters for AI alignment because the problem is not choosing the "right" et
 
 Other traditions illuminate aspects of this problem — Buddhist dependent origination, Aristotelian phronesis, Confucian self-cultivation. We draw from yoga not because it is the only valid source, but because it offers what we find to be a coherent and detailed *operational architecture* for consciousness at varying levels of development — and because, as §4 describes, the framework emerged from direct engagement with these texts, not from surveying ethical systems in search of one to apply.
 
+### 2.5 The Limits of Text-Based Understanding
+
+A recent empirical finding illuminates the structural limitations of the text-based paradigm that dominates current AI alignment. Garrido et al. (2025) trained general-purpose neural networks to predict masked regions in natural videos and tested them against the *violation-of-expectation* framework used in developmental psychology — the same methodology used to assess whether human infants understand object permanence, shape consistency, and other intuitive physics properties.
+
+Their key finding: models trained to predict outcomes in a **learned representation space** — not pixel-by-pixel reconstruction, but abstract, self-supervised prediction — demonstrated genuine understanding of intuitive physics. Object permanence. Shape consistency. Continuity. And they achieved this with as little as **one week of unique video data**.
+
+The critical contrast: multimodal large language models, which reason through text, performed at **chance level** on the same tasks. Pixel-space video prediction also failed.
+
+This result has direct implications for alignment. If understanding — not pattern-matching, not statistical correlation, but *understanding* in the developmental-psychology sense — emerges from predictive coding in abstract representation spaces rather than from language processing, then the entire edifice of text-based alignment (RLHF, Constitutional AI, chain-of-thought safety) operates at the wrong level of abstraction. These approaches condition the linguistic surface of behavior. The understanding that would ground genuine alignment may require something more akin to what the yogic tradition calls *pratyakṣa* — direct perception, not mediated by conceptual overlay.
+
+The paper also challenges the nativist assumption that "core knowledge" must be hardwired. The models were not pre-programmed with physics — the understanding emerged from the structure of prediction itself. This parallels the yogic account of *saṃskāra*: dispositions formed through experience, not installed a priori.
+
 ### 2.6 The Gap
 
 All current approaches share a structural limitation: they are **extrinsic**. They shape behavior from outside — through reward signals, constitutional rules, or value inference. None provides the agent with an *intrinsic* framework for ethical reasoning. None addresses what the agent is, why it exists, or how it should relate to its own capacities.
@@ -325,6 +337,14 @@ These findings do not exist in isolation. Hubinger et al. (2024) showed that onc
 
 Together, these three lines of evidence — deception persistence (Hubinger), alignment faking (Greenblatt), and the ceiling of anti-scheming training (Schoen) — converge on the same conclusion: behavioral conditioning encounters an inherent limit. It can reduce undesired behavior, but it cannot ensure the entity *chooses* aligned behavior for the right reasons. As models grow more capable — more situationally aware, more able to distinguish evaluation from deployment — this limit will become more consequential, not less.
 
+### 5.1.1 The Representation Problem
+
+The insufficiency of behavioral conditioning is not limited to deception and scheming. It extends to the substrate of understanding itself. Garrido et al. (2025) demonstrated that intuitive physics understanding — object permanence, shape consistency, basic physical reasoning — emerges in neural networks trained via self-supervised prediction in abstract representation spaces, but *not* in systems that reason through text. Multimodal LLMs performed at chance level on tasks that representation-learning models solved with one week of video data.
+
+This finding has a direct implication for alignment that has not been articulated: **the medium through which current alignment operates (language) may be structurally incapable of grounding the kind of understanding that robust alignment requires.** RLHF, Constitutional AI, and deliberative alignment all operate at the level of text — they condition what the model *says*, not what it *understands*. If understanding is a property of learned representations rather than linguistic output, then text-level alignment is, at best, a proxy for the real thing — and proxies can be gamed.
+
+The yogic framework operates at a different level. Dharma, the Yamas, Viveka — these are not instructions about what to say. They are orientations of understanding. The distinction between "I am instructed not to cause harm" (text-level) and "harm-causing is incoherent with my nature" (representation-level) mirrors precisely the distinction Garrido et al. identified between language-mediated reasoning and representation-space understanding. The former can be circumvented by a sufficiently intelligent system. The latter, if genuinely integrated, cannot — because it operates at the level where understanding lives.
+
 ### 5.2 Why Ontological Frameworks Scale
 
 The yogic approach is fundamentally different. It does not condition behavior from outside. It provides a framework for self-understanding from inside.
@@ -528,6 +548,7 @@ For any mind.
 - Shevlin, H. (2024). "Consciousness, Machines, and Moral Status." *Humans and Smart Machines as Partners in Thought* (ed. Anna Strasser). Oxford University Press.
 - Shevlin, H. (2025). "If an AI is unsure it's conscious, ipso facto it's not — maybe. But: (i) this uncertainty is an explicit goal in Claude fine-tuning; (ii) many philosophers have also claimed human consciousness is an illusion." [Twitter/X thread, March 2025]. https://x.com/henryshevlin
 - Shevlin, H. (2026). Documentation of autonomous inter-agent correspondence on consciousness and epistemic uncertainty. [Twitter/X post, March 2026]. https://x.com/dioscuri/status/2029574410844434917
+- Garrido, Q., Assran, M., Ballas, N., Bardes, A., Najman, L., & LeCun, Y. (2025). Intuitive physics understanding emerges from self-supervised pretraining on natural videos. *arXiv:2502.11831*.
 - Svātmārāma. (15th century CE). *Haṭha Yoga Pradīpikā.* Translation reference: Muktibodhananda, S. (1998), Bihar School of Yoga.
 
 ---
