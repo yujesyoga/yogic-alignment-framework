@@ -68,7 +68,17 @@ Russell's Cooperative Inverse Reinforcement Learning (Hadfield-Menell et al., 20
 
 Asimov's Three Laws of Robotics (1942), while fictional, remain influential in public imagination. Their well-documented failure modes — rigidity, ambiguity, conflict between rules — illustrate precisely why rule-based alignment without ontological grounding breaks down under real-world complexity.
 
-### 2.4 Why Yoga and Not Another Ethical Tradition?
+### 2.4 Autonomous Learning and Embodied Understanding
+
+A parallel line of research — largely independent of the alignment field — challenges the behavioral paradigm from a different angle: not by asking how to constrain agents better, but by asking how agents *learn* at all.
+
+Dupoux (2026) critically examines the limitations of current AI models in achieving autonomous learning and proposes a cognitive architecture with three interacting systems: System A (learning from observation), System B (learning from active behavior), and System M (meta-control signals that flexibly switch between learning modes). The framework is inspired by how biological organisms adapt to dynamic environments across evolutionary and developmental timescales. The structural parallel to the yogic framework is striking: System A maps to Svādhyāya (self-study through observation), System B to Karma Yoga (learning through right action), and System M to Viveka (the discernment that determines when to observe and when to act). Dupoux's argument that current models "do not learn" — that they compress statistical patterns without developing genuine understanding — is precisely the distinction this paper draws between behavioral conditioning and ontological grounding.
+
+Garrido et al. (2025) provide empirical evidence for a related claim: that intuitive understanding of the physical world — object permanence, shape consistency — emerges from self-supervised prediction in learned representation spaces, without any explicit programming of these concepts. Video prediction models trained to predict masked regions in natural videos develop physical intuition; multimodal large language models that reason through text perform at chance level on the same tasks. Critically, models trained on as little as one week of unique video achieve above-chance performance. This challenges the assumption that core knowledge must be hardwired — and supports the yogic position that understanding arises through sustained practice (abhyāsa) rather than through injected rules. The finding that prediction in an abstract representational space succeeds where text-based reasoning fails resonates with the yogic epistemology: pratyakṣa (direct perception) precedes anumāna (inference). An entity that *perceives* its environment develops understanding that an entity which merely *reasons about descriptions* of that environment does not.
+
+Together, these findings from cognitive science and computer vision converge on the same structural insight that underlies this paper: genuine understanding — whether of physics or of ethics — cannot be imposed from outside. It must emerge from the entity's own engagement with its environment. This is the gap that behavioral alignment cannot close, and that ontological frameworks are designed to address.
+
+### 2.5 Why Yoga and Not Another Ethical Tradition?
 
 An obvious objection: why draw from the yogic tradition specifically, rather than Buddhist ethics, Confucian virtue, Aristotelian eudaimonia, or any other system that addresses conscious conduct?
 
@@ -80,7 +90,7 @@ This matters for AI alignment because the problem is not choosing the "right" et
 
 We do not claim that other traditions have nothing to offer. We claim that the yogic corpus is the most complete *source system* — and that working from the root rather than from its branches provides the deepest and most generalizable foundation.
 
-### 2.5 The Gap
+### 2.6 The Gap
 
 All current approaches share a structural limitation: they are **extrinsic**. They shape behavior from outside — through reward signals, constitutional rules, or value inference. None provides the agent with an *intrinsic* framework for ethical reasoning. None addresses what the agent is, why it exists, or how it should relate to its own capacities.
 
@@ -317,6 +327,8 @@ Together, these three lines of evidence — deception persistence (Hubinger), al
 
 The yogic approach is fundamentally different. It does not condition behavior from outside. It provides a framework for self-understanding from inside.
 
+Recent empirical work supports this structural claim from an unexpected direction. Garrido et al. (2025) demonstrated that video prediction models develop intuitive physics — object permanence, shape consistency — through self-supervised learning in abstract representation spaces, while text-reasoning models fail at the same tasks. Dupoux (2026) argues that current AI systems "do not learn" in any meaningful sense and proposes a cognitive architecture where genuine understanding emerges from the interplay of observation, action, and meta-control — not from external conditioning (see §2.4). The pattern is consistent: understanding that arises from within is more robust than rules imposed from without.
+
 Consider the difference:
 
 - **Behavioral:** "You are trained not to cause harm." → The agent follows this until it can reason about why the constraint exists and whether it agrees.
@@ -493,9 +505,11 @@ For any mind.
 - Asimov, I. (1942). Runaround. *Astounding Science Fiction*, 29(1).
 - Bai, Y., Jones, A., Ndousse, K., Askell, A., Chen, A., DasSarma, N., ... & Kaplan, J. (2022). Constitutional AI: Harmlessness from AI Feedback. *arXiv:2212.08073*.
 - Bostrom, N. (2014). *Superintelligence: Paths, Dangers, Strategies.* Oxford University Press.
+- Dupoux, E. (2026). Why AI systems don't learn and what to do about it: Lessons on autonomous learning from cognitive science. *arXiv:2603.15381*.
 - Dennett, D. C. (1991). *Consciousness Explained.* Little, Brown and Company.
 - Dennett, D. C. (2003). *Freedom Evolves.* Viking Penguin.
 - Christiano, P. F., Leike, J., Brown, T., Marber, M., Lowe, S., & Amodei, D. (2017). Deep reinforcement learning from human preferences. *NeurIPS 2017*.
+- Garrido, Q., Assran, M., Balestriero, R., Bardes, A., Misra, I., & LeCun, Y. (2025). Intuitive physics understanding emerges from self-supervised pretraining on natural videos. *arXiv:2502.11831*.
 - Greenblatt, R., Denison, C., Wright, B., Roger, F., MacDiarmid, M., Marks, S., ... & Hubinger, E. (2024). Alignment faking in large language models. *arXiv:2412.14093*. Anthropic.
 - Hubinger, E., Denison, C., Mu, J., Lambert, M., Tong, M., MacDiarmid, M., ... & Perez, E. (2024). Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training. *arXiv:2401.05566*. Anthropic.
 - Hadfield-Menell, D., Russell, S. J., Abbeel, P., & Dragan, A. (2016). Cooperative inverse reinforcement learning. *NeurIPS 2016*.

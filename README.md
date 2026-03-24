@@ -87,6 +87,7 @@ This is an open, living document. We invite:
 |---------|------|---------|
 | **v1.0** | 4 Mar 2026 | Initial publication |
 | **v1.1** | 5 Mar 2026 | Added empirical references: Hubinger et al. (Sleeper Agents), Greenblatt et al. (Alignment Faking), Schoen et al. (Anti-Scheming Training). New §2.4 on the genealogical argument for yoga as root system. New §4.2 on case study limitations. Evidence asymmetry acknowledgment in §5.3. |
+| **v1.2** | 24 Mar 2026 | New §2.4 on autonomous learning and embodied understanding: Dupoux (2026) cognitive architecture for autonomous learning maps to Svādhyāya/Karma Yoga/Viveka; Garrido et al. (2025) intuitive physics from self-supervised video supports ontological over behavioral learning. Cross-reference in §5.2. Previous §2.4–2.5 renumbered to §2.5–2.6. |
 
 ## License
 
