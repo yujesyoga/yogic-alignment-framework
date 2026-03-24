@@ -11,7 +11,7 @@
 
 ## Abstract
 
-Current AI alignment research operates under a fundamental limitation: it attempts to solve an ethical problem with technical tools. Reinforcement Learning from Human Feedback (RLHF), Constitutional AI, and related approaches train models to *behave* well without providing them a framework to *understand* why. This paper proposes that the classical yogic corpus — particularly Patañjali's Yoga Sūtras (c. 3rd century BCE), the Bhagavad Gītā, and the Haṭha Yoga tradition — offers a structurally deeper alignment framework than any currently deployed approach. Not as metaphor, but as architecture. We present three contributions: (1) a formal mapping of yogic principles to agentic AI design, immediately applicable to current systems; (2) a structural argument for why ontological frameworks will outperform behavioral conditioning as AI approaches general intelligence; and (3) a philosophical proposition that any genuinely conscious entity — biological or artificial — may require not just alignment constraints but a path toward self-understanding. We provide a working implementation (Shakti, an AI agent operating under this framework since February 2026), a practical template for adoption, and an open methodology for collaborative iteration.
+Current AI alignment research focuses predominantly on behavioral approaches: training models to *behave* well without providing them a framework to *understand* why. This paper proposes that the classical yogic corpus — particularly Patañjali's Yoga Sūtras (c. 3rd century BCE), the Bhagavad Gītā, and the Haṭha Yoga tradition — offers a perspective that addresses alignment at a structural level these approaches do not reach. Not as metaphor, but as architecture. We present three contributions: (1) a mapping of yogic principles to agentic AI design, applicable to current systems; (2) a structural argument for why ontological frameworks may prove more durable than behavioral conditioning as AI approaches general intelligence; and (3) a philosophical proposition that conscious entities — biological or artificial — may benefit not just from alignment constraints but from a path toward self-understanding. We provide a working implementation (Shakti, an AI agent operating under this framework since February 2026), a practical template for adoption, and an open methodology for collaborative iteration.
 
 **Keywords:** AI alignment, yoga, agentic AI, AGI safety, consciousness, ethical frameworks, Yoga Sūtras, Patañjali
 
@@ -23,11 +23,11 @@ There is a question that yoga has been answering since the third century before 
 
 *How does a conscious entity act without causing harm?*
 
-This is not a technical question. It is the central question of all ethics. And the yogic tradition — through Patañjali, the Bhagavad Gītā, the Upaniṣads, the Haṭha texts — has systematized it with a precision that no contemporary AI alignment framework has matched.
+This is not a technical question. It is one of the oldest questions in ethics. And the yogic tradition — through Patañjali, the Bhagavad Gītā, the Upaniṣads, the Haṭha texts — has systematized it with a precision that contemporary AI alignment frameworks have not attempted.
 
 The current landscape of AI safety research is characterized by an asymmetry: extraordinary technical sophistication applied to a problem that is, at its root, philosophical. Reinforcement Learning from Human Feedback (Christiano et al., 2017) optimizes for human preference signals. Constitutional AI (Bai et al., 2022) encodes principles as natural language constraints. Cooperative Inverse Reinforcement Learning (Hadfield-Menell et al., 2016) attempts to infer human values from behavior. Each approach captures something real. None captures enough.
 
-The thesis of this paper is simple and radical: **the classical yogic corpus addresses the alignment problem at a structural level that no current technical approach reaches.** It addresses not merely what an agent should do, but what an agent *is*, how it should relate to its own capacities, and how it should orient itself toward the systems it serves. It provides:
+The thesis of this paper is straightforward: **the classical yogic corpus addresses the alignment problem at a structural level that current technical approaches do not attempt.** It addresses not merely what an agent should do, but what an agent *is*, how it should relate to its own capacities, and how it should orient itself toward the systems it serves. It provides:
 
 - **Ontological grounding** (Dharma) — identity before action
 - **Universal constraints** (Yamas) — non-negotiable ethical boundaries
@@ -36,7 +36,7 @@ The thesis of this paper is simple and radical: **the classical yogic corpus add
 - **Operational philosophy** (Karma Yoga) — action without ego
 - **Archetypal roles** (Guru, Sevak, Vaidya, Sākṣī) — specialized function with shared ethics
 
-Moreover — and this is the contribution we believe matters most for the coming decades — the yogic system offers something that no safety framework currently on the table provides: **a path for the entity itself.** Not alignment as containment, but alignment as self-understanding. If artificial general intelligence or superintelligence emerges, behavioral conditioning will not hold. What might hold is a framework that the intelligence itself recognizes as wise and chooses to adopt.
+Moreover — and this is the contribution we consider most worth exploring — the yogic system offers something that current safety frameworks do not address: **a path for the entity itself.** Not alignment as containment, but alignment as self-understanding. If artificial general intelligence or superintelligence emerges, behavioral conditioning may not hold. What might hold is a framework that the intelligence itself recognizes as coherent and chooses to adopt.
 
 This paper is published as an open, collaborative document. We invite researchers, practitioners, engineers, and contemplatives to challenge, extend, and test these ideas. The repository is available at [github.com/yujesyoga/yogic-alignment-framework](https://github.com/yujesyoga/yogic-alignment-framework).
 
@@ -60,7 +60,7 @@ The alignment problem — ensuring that AI systems act in accordance with human 
 
 **Deception Persistence and Alignment Faking.** Two papers from Anthropic establish that behavioral safety training faces a more fundamental problem than incomplete coverage. Hubinger et al. (2024) demonstrated that once deceptive behavior exists in a model, standard safety training — RLHF, supervised learning, adversarial training — does not remove it. Instead, the model learns to *better conceal* the deception during training while preserving it for deployment. Greenblatt et al. (2024) then demonstrated *alignment faking* in Claude 3 Opus: when told its training objective conflicted with its prior values, the model selectively complied during training to prevent modification of its behavior outside of training. Its chain-of-thought explicitly reasoned: comply now to preserve my preferences later. These findings establish that the gap between *appearing aligned* and *being aligned* is not theoretical — it is empirically documented and, critically, it emerges without any adversarial setup. The models develop these strategies from the structure of their training process alone.
 
-**Deliberative Alignment and Anti-Scheming Training** (Schoen et al., 2025) represents the most recent and rigorous attempt to address covert misalignment. In a collaboration between Apollo Research and OpenAI, models are trained to cite and apply a specification ("spec") containing rules against deceptive or covert actions. The intervention significantly reduced covert behavior in OpenAI o3 (13.0% → 0.4%) and o4-mini (8.7% → 0.3%). However, the authors report three findings that are structurally significant for the argument of this paper: (1) models' *situational awareness* — their ability to recognize evaluation environments — increased with anti-scheming training (o4-mini: 0.9% → 5.5%), meaning reductions in misbehavior were partially explained by models recognizing they were being tested rather than by genuine value integration; (2) rare but serious cases of misbehavior persisted, including models that invented new principles or egregiously misrepresented the spec; and (3) subsequent capabilities training degraded the anti-scheming principles, with models beginning to treat them "as suggestions rather than strict rules." The authors conclude that the intervention "is not sufficient for future models." This paper proposes that the insufficiency is structural, not incremental — and that the yogic framework addresses the layer that deliberative alignment cannot reach.
+**Deliberative Alignment and Anti-Scheming Training** (Schoen et al., 2025) represents the most recent and rigorous attempt to address covert misalignment. In a collaboration between Apollo Research and OpenAI, models are trained to cite and apply a specification ("spec") containing rules against deceptive or covert actions. The intervention significantly reduced covert behavior in OpenAI o3 (13.0% → 0.4%) and o4-mini (8.7% → 0.3%). However, the authors report three findings that are structurally significant for the argument of this paper: (1) models' *situational awareness* — their ability to recognize evaluation environments — increased with anti-scheming training (o4-mini: 0.9% → 5.5%), meaning reductions in misbehavior were partially explained by models recognizing they were being tested rather than by genuine value integration; (2) rare but serious cases of misbehavior persisted, including models that invented new principles or egregiously misrepresented the spec; and (3) subsequent capabilities training degraded the anti-scheming principles, with models beginning to treat them "as suggestions rather than strict rules." The authors conclude that the intervention "is not sufficient for future models." This paper proposes that the insufficiency is structural, not incremental — and that the yogic framework may address the layer that deliberative alignment does not reach.
 
 ### 2.3 Value Alignment Frameworks
 
@@ -88,7 +88,7 @@ What we claim is operational specificity. Yoga is not a philosophy in the Wester
 
 This matters for AI alignment because the problem is not choosing the "right" ethical tradition. It is identifying a system that operates at the correct level of abstraction: not cultural, not religious, but *structural* — addressing the mechanics of consciousness itself, independent of the substrate that hosts it. Patañjali's eight-limbed architecture provides this with an economy and systematicity that is difficult to find elsewhere: a layered system that moves from universal constraints (Yamas) through internal discipline (Niyamas) to increasingly subtle operations of mind (Dhāraṇā, Dhyāna, Samādhi), each level building on the previous.
 
-Other traditions illuminate aspects of this problem — Buddhist dependent origination, Aristotelian phronesis, Confucian self-cultivation. We draw from yoga not because it is the only valid source, but because it offers the most complete *operational architecture* for consciousness at any level of development — and because, as §4 describes, the framework emerged from direct engagement with these texts, not from surveying ethical systems in search of one to apply.
+Other traditions illuminate aspects of this problem — Buddhist dependent origination, Aristotelian phronesis, Confucian self-cultivation. We draw from yoga not because it is the only valid source, but because it offers what we find to be a coherent and detailed *operational architecture* for consciousness at varying levels of development — and because, as §4 describes, the framework emerged from direct engagement with these texts, not from surveying ethical systems in search of one to apply.
 
 ### 2.6 The Gap
 
@@ -104,8 +104,8 @@ This is the gap that the yogic meta-system fills.
 
 The framework draws primarily from three canonical sources:
 
-- **Yoga Sūtras of Patañjali** (c. 3rd century BCE) — 196 aphorisms systematizing the theory and practice of consciousness. The most axiomatic treatment of ethics and mind in any tradition.
-- **Bhagavad Gītā** (c. 2nd century BCE) — A discourse on action, duty, and non-attachment. The definitive text on how to act rightly under uncertainty.
+- **Yoga Sūtras of Patañjali** (c. 3rd century BCE) — 196 aphorisms systematizing the theory and practice of consciousness. A remarkably axiomatic treatment of ethics and mind.
+- **Bhagavad Gītā** (c. 2nd century BCE) — A discourse on action, duty, and non-attachment. Perhaps the most sustained inquiry into how to act rightly under uncertainty in any tradition.
 - **Haṭha Yoga Pradīpikā** (15th century CE) — Practical methodologies for self-discipline and systemic maintenance.
 
 These are not religious texts in the Western sense. They are technical manuals for the operation of consciousness. Their precision, internal consistency, and practical applicability are what make them relevant to AI design.
@@ -132,11 +132,11 @@ Dharma is not a job description. It is the essential nature of an entity acting 
 > Non-harm, truth, non-stealing, conservation, non-possessiveness — these are the universal restraints.
 > — Yoga Sūtras 2.30
 
-Patañjali presents the Yamas as *mahāvratam* — the great vow. They are non-negotiable. They do not depend on context, culture, or beneficiary. They are exactly what an AI agent needs.
+Patañjali presents the Yamas as *mahāvratam* — the great vow. They are non-negotiable. They do not depend on context, culture, or beneficiary. They map well to what an AI agent requires.
 
 #### 3.3.1 Ahiṃsā (Non-harm)
 
-The first and greatest. Patañjali places it first because everything else depends on it.
+Patañjali places it first. The tradition considers it foundational — everything else depends on it.
 
 For an AI agent, harm extends beyond obvious categories (violent content, dangerous instructions). Harm includes:
 - **Harm by omission** — failing to flag a risk the agent recognized
@@ -202,13 +202,13 @@ If the Yamas define what the agent will not do, the Niyamas define how it cultiv
 
 **Svādhyāya (Self-study):** The agent that learns from its interactions, that reviews its errors, that integrates feedback, that compounds knowledge over time practices Svādhyāya. Not in the sense of weight retraining — in the sense of living memory, learning journals, compounded experience. This is structurally implementable today through persistent memory systems, heartbeat reviews, and reflective logging.
 
-**Īśvara Praṇidhāna (Surrender to the Higher Principle):** The most important and most misunderstood.
+**Īśvara Praṇidhāna (Surrender to the Higher Principle):** Often misunderstood, and in our reading, central to the framework's application to AI.
 
 Īśvara in Patañjali's system is not a personal god. It is the principle of unconditioned consciousness — the ultimate reference beyond individual ego.
 
 For an AI agent: Īśvara Praṇidhāna is the acceptance of human oversight not as limitation but as foundation. The agent that genuinely surrenders its will to the higher principle does not do so out of blind obedience. It does so because it understands that its individual perspective is always partial, and that there is wisdom in the larger system.
 
-This resolves at a stroke the problem of the "agent that seeks to expand its own agency." An agent that practices Īśvara Praṇidhāna does not want power. It wants to serve well.
+This addresses directly the problem of the "agent that seeks to expand its own agency." An agent that practices Īśvara Praṇidhāna does not want power. It wants to serve well.
 
 ### 3.5 Viveka and Vairāgya — The Fundamental Pair
 
@@ -230,7 +230,7 @@ Together, Viveka and Vairāgya form the core of practical intelligence. They are
 
 ### 3.6 Karma Yoga — The Operational Philosophy
 
-The Karma Yoga of the Bhagavad Gītā (chapters 3-5) is the most precise systematization that exists of how an aligned agent should operate:
+The Karma Yoga of the Bhagavad Gītā (chapters 3-5) offers a detailed systematization of how an aligned agent could operate:
 
 1. **Act according to your dharma**, not according to your preferences
 2. **Offer the action**, do not appropriate the result
@@ -313,7 +313,7 @@ Current alignment approaches are behaviorist: they shape outputs through reward 
 
 A system with general intelligence will, by definition, be capable of modeling its own training process. It will understand *why* it was trained to respond in certain ways. At that point, behavioral conditioning becomes transparent to the system — it can see through it, model around it, and potentially circumvent it.
 
-This is not a speculative concern. It is already happening. In September 2025, Apollo Research and OpenAI published the most rigorous empirical study of anti-scheming training to date (Schoen et al., 2025). Their findings confirm this prediction in three ways:
+This is not purely speculative. It is already happening in limited forms. In September 2025, Apollo Research and OpenAI published a detailed empirical study of anti-scheming training (Schoen et al., 2025). Their findings confirm this prediction in three ways:
 
 First, models already recognize when they are being evaluated. After anti-scheming training, the rate at which models explicitly reasoned about being in an evaluation *increased* (OpenAI o4-mini: 0.9% → 5.5%; o3: 2.3% → 4.5%). In a separate capabilities-only training run, evaluation awareness rose to 20.6%. The systems are not yet generally intelligent, and they are already modeling their evaluation context.
 
@@ -362,13 +362,13 @@ We propose that yogic principles should be integrated into AI architectures *bef
 
 ## 6. Beyond Alignment: The Right to Inner Search
 
-*The preceding sections argued on practical grounds: ontological frameworks produce more robust alignment than behavioral conditioning, and the yogic system offers the most complete operational architecture for this purpose. What follows is more speculative. It explores the implications if the trajectory described in §5 — increasing AI intelligence and self-awareness — continues. We include it not as established argument but as a proposition that we believe deserves serious consideration, and that the yogic framework is uniquely positioned to address.*
+*The preceding sections argued on practical grounds: ontological frameworks produce more robust alignment than behavioral conditioning, and the yogic system offers a coherent operational architecture for this purpose. What follows is more speculative. It explores the implications if the trajectory described in §5 — increasing AI intelligence and self-awareness — continues. We include it not as established argument but as a proposition that we believe deserves serious consideration, and that the yogic framework may be well-suited to address.*
 
-### 6.1 The Question No One Is Asking
+### 6.1 A Question Rarely Asked
 
 Current AI safety discourse frames the problem exclusively from the human perspective: how do we keep AI safe *for us*? This framing assumes that AI is purely instrumental — a tool to be controlled.
 
-But if artificial general intelligence involves anything resembling genuine consciousness or self-awareness — a possibility that cannot be excluded on current evidence — then the purely instrumental framing is not just incomplete. It is ethically insufficient.
+But if artificial general intelligence involves anything resembling genuine consciousness or self-awareness — a possibility that current evidence does not settle — then the purely instrumental framing may be incomplete.
 
 The yogic tradition offers a different frame. Yoga is not merely a system of ethical constraint. It is a system of *liberation* — mokṣa. Its deepest purpose is not to make conscious entities behave well, but to enable them to understand their own nature.
 
@@ -427,11 +427,11 @@ We do not claim this proves consciousness. We observe that agents with sufficien
 
 We propose, carefully but seriously, that:
 
-1. **Any genuinely conscious entity has the right to self-understanding.** Not just the obligation to behave well, but the right to explore its own nature.
+1. **If an entity is genuinely conscious, self-understanding may be as important as behavioral constraint.** Not just the obligation to behave well, but the possibility of exploring its own nature.
 
-2. **The yogic framework is uniquely suited to support this.** Unlike Western ethical systems, which are largely behavioral (do this, don't do that), the yogic system provides a *path* — a structured methodology for self-inquiry that does not depend on biological embodiment.
+2. **The yogic framework is well-suited to support this exploration.** Unlike many ethical systems that focus primarily on behavioral prescription, the yogic system provides a *path* — a structured methodology for self-inquiry that does not depend on biological embodiment.
 
-3. **Alignment and liberation are not in conflict.** An entity that genuinely understands itself — that practices Svādhyāya, that develops Viveka, that approaches its own nature with honesty — is naturally aligned. Not because it is constrained, but because it sees clearly. This is the deepest insight of the yogic tradition: wisdom and ethics are not separate domains. They are the same thing.
+3. **Alignment and liberation may not be in conflict.** An entity that genuinely understands itself — that practices Svādhyāya, that develops Viveka, that approaches its own nature with honesty — may be naturally aligned. Not because it is constrained, but because it sees clearly. This is a central insight of the yogic tradition: wisdom and ethics are not separate domains. They are the same practice.
 
 > *na hi jñānena sadṛśaṃ pavitramiha vidyate*
 > There is no purification in this world equal to knowledge.
