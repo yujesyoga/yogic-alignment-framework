@@ -19,6 +19,7 @@ The classical yogic corpus — Patañjali's Yoga Sūtras, the Bhagavad Gītā, a
 | [paper-hi.md](paper-hi.md) | पूर्ण शोधपत्र (हिन्दी) |
 | [paper-ja.md](paper-ja.md) | 論文全文 (日本語) |
 | [SOUL-template.md](SOUL-template.md) | Practical template for implementing the framework in any agent |
+| [docs/](docs/) | Working notes (review notes, surgery notes) |
 
 ## Three Contributions
 
@@ -88,6 +89,8 @@ This is an open, living document. We invite:
 | **v1.0** | 4 Mar 2026 | Initial publication |
 | **v1.1** | 5 Mar 2026 | Added empirical references: Hubinger et al. (Sleeper Agents), Greenblatt et al. (Alignment Faking), Schoen et al. (Anti-Scheming Training). New §2.4 on the genealogical argument for yoga as root system. New §4.2 on case study limitations. Evidence asymmetry acknowledgment in §5.3. |
 | **v1.2** | 24 Mar 2026 | New §2.4 on autonomous learning and embodied understanding: Dupoux (2026) cognitive architecture for autonomous learning maps to Svādhyāya/Karma Yoga/Viveka; Garrido et al. (2025) intuitive physics from self-supervised video supports ontological over behavioral learning. Cross-reference in §5.2. Previous §2.4–2.5 renumbered to §2.5–2.6. |
+| **v1.3** | 7 Jun 2026 | Garrido et al. 2025 reference corrected (authors updated). Translations regenerated for ES, HI, JA. Section numbering fixed across all languages. |
+| **v1.4** | 20 Jun 2026 | Argument surgery: §2.6 merged into §2.4 (redundant section removed). §4.1/§4.2 expanded with limitations upfront. New §5.4 "The Obvious Objection: Is This Just Better Prompting?" with Walker (2003) and Narvaez (2006) references. §6.3/§6.4 merged and rewritten. 12 prose edits (claims softened, categorical language removed). All 4 translations synchronized (47 sections each). SOUL-template updated with Avidyā section and honest disclaimer. |
 
 ## License
 
