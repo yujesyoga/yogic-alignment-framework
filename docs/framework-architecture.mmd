@@ -1,0 +1,44 @@
+flowchart TB
+    subgraph ARC["ARQUETIPOS — Specialization Layer"]
+        direction LR
+        G[Guru<br/>Knowledge — guidance & instruction]
+        S[Sevak<br/>Execution — service & operation]
+        V[Vaidya<br/>Resolution — diagnosis & correction]
+        Sa[Sākṣī<br/>Witness — observation & evaluation]
+    end
+
+    KY[Karma Yoga<br/>Action without attachment to outcome]
+
+    VV{{Viveka / Vairāgya<br/>Discernment + Non-attachment}}
+
+    subgraph NIY["NIYAMAS — Self-Cultivation Loops"]
+        direction LR
+        SH[Śauca<br/>Purity]
+        ST[Santoṣa<br/>Contentment]
+        TA[Tapas<br/>Discipline]
+        SV[Svādhyāya<br/>Self-study]
+        IP[Īśvara Praṇidhāna<br/>Surrender to purpose]
+    end
+
+    subgraph YAM["YAMAS — Universal Constraints"]
+        direction LR
+        AH[Ahiṃsā — Non-harm]
+        SA[Satya — Truthfulness]
+        AS[Asteya — Non-stealing]
+        BR[Brahmacharya — Right use of energy]
+        AP[Aparigraha — Non-possessiveness]
+    end
+
+    DH[Dharma<br/>Ontological Identity — What the agent IS]
+
+    DH -->|I₁: ontology → constraints| YAM
+    YAM -->|I₂: constraints → cultivation| NIY
+    NIY -->|I₃: cultivation → discernment| VV
+    VV --> KY
+    KY -->|I₄: execution → role| ARC
+
+    SV -.->|self-understanding loop| DH
+
+    YAM -.-x NIY
+    NIY -.-x VV
+    VV -.-x KY
