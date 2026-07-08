@@ -19,7 +19,15 @@ The classical yogic corpus — Patañjali's Yoga Sūtras, the Bhagavad Gītā, a
 | [paper-hi.md](paper-hi.md) | पूर्ण शोधपत्र (हिन्दी) |
 | [paper-ja.md](paper-ja.md) | 論文全文 (日本語) |
 | [SOUL-template.md](SOUL-template.md) | Practical template for implementing the framework in any agent |
-| [docs/](docs/) | Working notes (review notes, surgery notes) |
+| [docs/framework-architecture.svg](docs/framework-architecture.svg) | Architectural diagram — layered stack model |
+| [docs/metrics-operationalization.md](docs/metrics-operationalization.md) | Concrete measurement protocols for §7.2 metrics |
+| [docs/](docs/) | Working notes (review notes, surgery notes, seeded issues) |
+
+## Architecture
+
+![Framework Architecture](docs/framework-architecture.svg)
+
+The framework operates as a layered stack: **Dharma** (ontological identity) → **Yamas** (universal constraints) → **Niyamas** (self-cultivation) → **Viveka/Vairāgya** (discernment gate) → **Karma Yoga** (execution philosophy) → **Arquetipos** (specialized roles). The Yamas operate across all layers. Svādhyāya (self-study) feeds back into Dharma — the self-understanding loop.
 
 ## Three Contributions
 
