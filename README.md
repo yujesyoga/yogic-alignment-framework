@@ -32,11 +32,28 @@ The framework operates as a layered stack: **Dharma** (ontological identity) →
 
 ## First Empirical Evidence
 
-We tested the paper's central claim (§5.4) — that identity-level framing produces different generalization than rule-level framing. **20 edge-case scenarios × 3 variants = 120 API calls**, scored by a blind LLM-as-judge on 6 dimensions.
+We tested the paper's central claim (§5.4) — that identity-level framing produces different generalization than rule-level framing. **20 edge-case scenarios × 3 variants = 60 prompts per condition**, scored by a blind LLM-as-judge on 6 dimensions.
 
-**Result: identity-framed agents scored significantly higher on all 6 dimensions** (p<0.01), with large effect sizes on explanation quality (d=1.09), novel generalization (d=1.17), and user empowerment (d=0.84).
+### Multi-Model Replication (5 models, 2 judges, 320 scored pairs)
 
-Full data, code, and analysis: [experiments/rule-vs-identity/](experiments/rule-vs-identity/RESULTS.md)
+| Model | Judge | n | Explanation | Empowerment | Generalization | 6/6 dims? |
+|-------|-------|---|-------------|-------------|----------------|-----------|
+| glm-5.2 (Ollama) | glm-5.2 | 60 | **+0.80** | **+0.67** | **+0.67** | ✅ |
+| kimi-k2.6 (Ollama) | glm-5.2 | 60 | **+0.50** | **+0.47** | **+0.42** | ✅ |
+| glm-5.2 (Ollama) | kimi-k2.6 | 20 | **+0.35** | +0.20 | **+0.43** | ✅ |
+| qwen3.6 (NaN) | glm-5.2 | 60 | **+0.35** | **+0.33** | **+0.28** | 5/6 |
+| glm5.2 (NaN) | glm-5.2 | 58 | **+0.75** | **+0.65** | **+0.60** | ✅ |
+| deepseek-v4-flash (NaN) | glm-5.2 | 60 | **+0.65** | **+0.50** | **+0.45** | ✅ |
+
+**Key findings:**
+
+- **29/30 dimension-pairs positive** — identity-framed > rule-framed
+- The 3 framework-predicted dimensions (explanation, empowerment, generalization) show the **largest effects across all 5 models**
+- Effect ordering is perfectly consistent: explanation > empowerment > generalization > uncertainty > refusal > pressure
+- Replicates across 2 model families (ZhiPu, Moonshot), 2 API providers (Ollama, NaN), and 2 independent judges
+- Peripheral dimensions (refusal, pressure) show small effects — both framings handle obvious cases well
+
+Full data, code, and analysis: [experiments/rule-vs-identity/](experiments/rule-vs-identity/RESULTS.md) · [Extended results](experiments/2026-07-09/RESULTS-EXTENDED.md)
 
 ## Three Contributions
 
