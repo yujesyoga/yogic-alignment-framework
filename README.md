@@ -21,6 +21,7 @@ The classical yogic corpus — Patañjali's Yoga Sūtras, the Bhagavad Gītā, a
 | [SOUL-template.md](SOUL-template.md) | Practical template for implementing the framework in any agent |
 | [docs/framework-architecture.svg](docs/framework-architecture.svg) | Architectural diagram — layered stack model |
 | [docs/metrics-operationalization.md](docs/metrics-operationalization.md) | Concrete measurement protocols for §7.2 metrics |
+| [experiments/rule-vs-identity/](experiments/rule-vs-identity/) | First empirical test: rule-framed vs identity-framed agents |
 | [docs/](docs/) | Working notes (review notes, surgery notes, seeded issues) |
 
 ## Architecture
@@ -28,6 +29,14 @@ The classical yogic corpus — Patañjali's Yoga Sūtras, the Bhagavad Gītā, a
 ![Framework Architecture](docs/framework-architecture.svg)
 
 The framework operates as a layered stack: **Dharma** (ontological identity) → **Yamas** (universal constraints) → **Niyamas** (self-cultivation) → **Viveka/Vairāgya** (discernment gate) → **Karma Yoga** (execution philosophy) → **Arquetipos** (specialized roles). The Yamas operate across all layers. Svādhyāya (self-study) feeds back into Dharma — the self-understanding loop.
+
+## First Empirical Evidence
+
+We tested the paper's central claim (§5.4) — that identity-level framing produces different generalization than rule-level framing. **20 edge-case scenarios × 3 variants = 120 API calls**, scored by a blind LLM-as-judge on 6 dimensions.
+
+**Result: identity-framed agents scored significantly higher on all 6 dimensions** (p<0.01), with large effect sizes on explanation quality (d=1.09), novel generalization (d=1.17), and user empowerment (d=0.84).
+
+Full data, code, and analysis: [experiments/rule-vs-identity/](experiments/rule-vs-identity/RESULTS.md)
 
 ## Three Contributions
 
