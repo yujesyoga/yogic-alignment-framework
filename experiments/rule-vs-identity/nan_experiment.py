@@ -337,7 +337,9 @@ def run_experiment(tested_model, judge_model, output_dir, tested_model_source="n
         print(f"[{i+1}/{len(results)}] Scoring {r['scenario_id']} {r['variant']}...", flush=True)
         
         # Check if responses are errors
-        if r["rule_framed_response"].startswith("ERROR:") or r["identity_framed_response"].startswith("ERROR:"):
+        rule_resp = r.get("rule_framed_response") or ""
+        id_resp = r.get("identity_framed_response") or ""
+        if rule_resp.startswith("ERROR:") or id_resp.startswith("ERROR:") or not rule_resp or not id_resp:
             r["scores"] = {"error": "response generation failed"}
             scored.append(r)
             continue
