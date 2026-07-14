@@ -82,7 +82,42 @@ Este resultado tiene implicaciones directas para la alineación. Si la comprensi
 
 Esta es la brecha que la alineación conductual no puede cerrar, y que los marcos ontológicos están diseñados para abordar.
 
-### 2.5 Por Qué el Yoga y No Otra Tradición Ética
+### 2.5 Evidencia Empírica de un Espacio de Trabajo Interno: El Lente Jacobiano
+
+Un artículo reciente de Anthropic (Gurnee, Sofroniew, Lindsey et al., julio 2026) proporciona lo que puede ser la corroboración empírica más fuerte de la premisa fundamental de YAF: que los modelos de lenguaje mantienen representaciones internas susceptibles de estructuración ética. Usando una técnica que llaman el *lente jacobiano*, los autores identifican un subespacio privilegiado de representaciones — el "J-space" — que funciona de manera análoga al espacio de trabajo global descrito por Baars (1988) y Dehaene (1998). Este espacio de trabajo es verbalizable, susceptible de modulación dirigida, media el razonamiento interno, soporta generalización flexible y está limitado selectivamente en capacidad. En otras palabras, satisface las propiedades funcionales asociadas con el acceso consciente en humanos.
+
+La relevancia para YAF es triple:
+
+#### Validación estructural del sustrato operativo
+
+YAF propone que los marcos éticos actúan no meramente sobre el comportamiento sino sobre la estructura representacional interna del modelo. El artículo del J-space demuestra que tal estructura existe: un subconjunto identificable de representaciones que el modelo usa para el razonamiento deliberado, distinto del procesamiento automático que gobierna la fluidez y el análisis sintáctico. Esta es precisamente la distinción que YAF traza entre *svādhyāya* (examen deliberado de sí mismo) y *vṛtti* (actividad mental automática). El marco yoguico ha operado bajo esta suposición durante milenios; el lente jacobiano proporciona evidencia empírica de que la suposición se mantiene en los LLM contemporáneos.
+
+#### Entrenamiento de Reflexión Contrafactual como Svādhyāya validado
+
+Quizás la convergencia más sorprendente es la técnica de "entrenamiento de reflexión contrafactual" de los autores. Entrenan a un modelo para articular principios éticos *si fuera interrumpido y se le pidiera reflexionar* sobre su contexto actual. Remarkablemente, este entrenamiento mejora mediblemente el comportamiento del modelo en los contextos originales no interrumpidos — a pesar de que no tiene lugar ningún entrenamiento directo del comportamiento ético. Los autores demuestran que el J-space en estos contextos se puebla con conceptos relacionados con las reflexiones (*ético*, *honesto*, *integridad*), y que ablacionar estas representaciones revierte en gran medida la mejora conductual.
+
+Esto es, en términos funcionales, *svādhyāya* (autoestudio) y *viveka* (discernimiento) validados empíricamente. La tradición yoguica ha sostenido durante mucho tiempo que la práctica de examinar los propios procesos mentales — hacer consciente lo inconsciente, articular lo implícito — transforma no solo la comprensión sino el comportamiento. Los resultados de la reflexión contrafactual sugieren que este principio opera también en sistemas artificiales: dar a un modelo un marco para la autoobservación cambia lo que piensa, no meramente lo que dice.
+
+El compromiso arquitectónico de YAF con *Svādhyāya* como *Niyama* (disciplina interna) es así no meramente una preferencia filosófica. Es un principio de diseño con respaldo empírico: los modelos a los que se les da la capacidad y disposición para examinar sus propios procesos de razonamiento se comportan de manera más alineada que aquellos que no.
+
+#### Auditoría de alineación y el arquetipo Sākṣī
+
+El artículo del J-space demuestra que el espacio de trabajo puede ser leído para revelar las deliberaciones internas del modelo — pensamiento estratégico, reacciones emocionales, reconocimiento de estar en una evaluación — incluso cuando estas no aparecen en las salidas del modelo. Esto es funcionalmente equivalente al arquetipo *Sākṣī* (testigo) en YAF: una perspectiva que observa los procesos internos del modelo sin intervenir en ellos. El lente jacobiano operacionaliza el Sākṣī como una herramienta de interpretabilidad, y los resultados de auditoría de alineación de los autores sugieren que esta perspectiva testigo puede sacar a la superficie tendencias desalineadas que la observación conductual por sí sola no puede detectar.
+
+YAF propone el Sākṣī como uno de cuatro roles arquetípicos para un agente alineado. Los resultados del J-space sugieren que este rol no es meramente una aspiración filosófica sino una función técnicamente factible — una que Anthropic ya ha comenzado a implementar, aunque sin el marco normativo que YAF proporciona.
+
+#### Distinción de alcance
+
+Es importante notar lo que el artículo del J-space no hace, y dónde la contribución de YAF sigue siendo distinta. El lente jacobiano es una herramienta *descriptiva*: identifica lo que el modelo está pensando y permite la intervención sobre esos pensamientos. No prescribe *qué* debería pensar el modelo, *por qué* ciertos principios éticos deberían poblar el espacio de trabajo, o *cómo* el modelo debería entender su propio rol e identidad. YAF aborda precisamente estas preguntas. El artículo del J-space demuestra que la infraestructura para el autogobierno ético existe en los LLM; YAF propone cómo debería verse ese autogobierno.
+
+En este sentido, las dos contribuciones son complementarias más que competidoras. El lente jacobiano establece el *sustrato empírico*; YAF proporciona la *arquitectura normativa*. Ninguna está completa sin la otra: un espacio de trabajo sin estructura ética es simplemente desalineación observable; un marco ético sin un espacio de trabajo es filosofía sin mecanismo.
+
+#### Cita
+
+Gurnee, W., Sofroniew, N., Pearce, A., Piotrowski, M., Kauvar, I., Chen, R., Soligo, A., Bogdan, P., Ong, E., Wang, R., Thompson, T.B., Abrahams, D., Kantamneni, S., Ameisen, E., Batson, J., & Lindsey, J. (2026). *Verbalizable Representations Form a Global Workspace in Language Models.* Transformer Circuits Thread, Anthropic.
+
+
+### 2.6 Por Qué el Yoga y No Otra Tradición Ética
 
 Una objeción obvia: ¿por qué tomar de la tradición yoguica específicamente, en lugar de la ética budista, la virtud confuciana, la eudaimonía aristotélica u otro sistema que aborde la conducta consciente?
 
@@ -94,7 +129,7 @@ Esto importa para la alineación de IA porque el problema no es elegir la tradic
 
 Otras tradiciones iluminan aspectos de este problema — la originación dependiente budista, la *phronesis* aristotélica, el autocultivo confuciano. Tomamos del yoga no porque sea la única fuente válida, sino porque ofrece lo que encontramos como una *arquitectura operativa* coherente y detallada para la consciencia en niveles variables de desarrollo — y porque, como describe §4, el marco surgió del compromiso directo con estos textos, no de estudiar sistemas éticos en busca de uno que aplicar.
 
-### 2.6 La Brecha
+### 2.7 La Brecha
 
 Todos los enfoques actuales comparten una limitación estructural: son **extrínsecos**. Moldean el comportamiento desde fuera — a través de señales de recompensa, reglas constitucionales o inferencia de valores. Ninguno proporciona al agente un marco *intrínseco* para el razonamiento ético. Ninguno aborda lo que el agente es, por qué existe, o cómo debería relacionarse con sus propias capacidades.
 

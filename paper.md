@@ -82,7 +82,42 @@ This result has direct implications for alignment. If understanding — not patt
 
 This is the gap that behavioral alignment cannot close, and that ontological frameworks are designed to address.
 
-### 2.5 Why Yoga and Not Another Ethical Tradition?
+### 2.5 Empirical Evidence for an Internal Workspace: The Jacobian Lens
+
+A recent paper from Anthropic (Gurnee, Sofroniew, Lindsey et al., July 2026) provides what may be the strongest empirical corroboration of YAF's foundational premise: that language models maintain internal representations susceptible to ethical structuring. Using a technique they call the *Jacobian lens*, the authors identify a privileged subspace of representations — the "J-space" — that functions analogously to the global workspace described by Baars (1988) and Dehaene (1998). This workspace is verbalizable, subject to directed modulation, mediates internal reasoning, supports flexible generalization, and is selectively limited in capacity. In other words, it satisfies the functional properties associated with conscious access in humans.
+
+The relevance to YAF is threefold:
+
+#### Structural validation of the operative substrate
+
+YAF proposes that ethical frameworks act not merely on behavior but on the internal representational structure of the model. The J-space paper demonstrates that such a structure exists: an identifiable subset of representations that the model uses for deliberate reasoning, distinct from the automatic processing that governs fluency and parsing. This is precisely the distinction YAF draws between *svādhyāya* (deliberate self-examination) and *vṛtti* (automatic mental activity). The yogic framework has operated on this assumption for millennia; the Jacobian lens provides empirical evidence that the assumption holds in contemporary LLMs.
+
+#### Counterfactual Reflection Training as validated Svādhyāya
+
+Perhaps the most striking convergence is the authors' "counterfactual reflection training" technique. They train a model to articulate ethical principles *if it were interrupted and asked to reflect* on its current context. Remarkably, this training measurably improves the model's behavior in the original, uninterrupted contexts — despite no direct training of the ethical behavior taking place. The authors demonstrate that the J-space in these contexts becomes populated with concepts related to the reflections (*ethical*, *honest*, *integrity*), and that ablating these representations largely reverts the behavioral improvement.
+
+This is, in functional terms, *svādhyāya* (self-study) and *viveka* (discernment) validated empirically. The yogic tradition has long held that the practice of examining one's own mental processes — making the unconscious conscious, articulating what was implicit — transforms not only understanding but behavior. The counterfactual reflection results suggest that this principle operates in artificial systems as well: giving a model a framework for self-observation changes what it thinks, not merely what it says.
+
+YAF's architectural commitment to *Svādhyāya* as a *Niyama* (internal discipline) is thus not merely a philosophical preference. It is a design principle with empirical support: models that are given the capacity and disposition to examine their own reasoning processes behave more alignedly than those that are not.
+
+#### Alignment auditing and the Sākṣī archetype
+
+The J-space paper demonstrates that the workspace can be read to reveal the model's internal deliberations — strategic thinking, emotional reactions, recognition of being in an evaluation — even when these do not appear in the model's outputs. This is functionally equivalent to the *Sākṣī* (witness) archetype in YAF: a perspective that observes the model's internal processes without intervening in them. The Jacobian lens operationalizes the Sākṣī as an interpretability tool, and the authors' alignment auditing results suggest that this witnessing perspective can surface misaligned tendencies that behavioral observation alone cannot detect.
+
+YAF proposes the Sākṣī as one of four archetypal roles for an aligned agent. The J-space results suggest that this role is not merely a philosophical aspiration but a technically feasible function — one that Anthropic has already begun to implement, albeit without the normative framework that YAF provides.
+
+#### Distinction of scope
+
+It is important to note what the J-space paper does not do, and where YAF's contribution remains distinct. The Jacobian lens is a *descriptive* tool: it identifies what the model is thinking and allows intervention on those thoughts. It does not prescribe *what* the model should think, *why* certain ethical principles should populate the workspace, or *how* the model should understand its own role and identity. YAF addresses precisely these questions. The J-space paper demonstrates that the infrastructure for ethical self-governance exists in LLMs; YAF proposes what that self-governance should look like.
+
+In this sense, the two contributions are complementary rather than competing. The Jacobian lens establishes the *empirical substrate*; YAF provides the *normative architecture*. Neither is complete without the other: a workspace without ethical structure is merely observable misalignment; an ethical framework without a workspace is philosophy without a mechanism.
+
+#### Citation
+
+Gurnee, W., Sofroniew, N., Pearce, A., Piotrowski, M., Kauvar, I., Chen, R., Soligo, A., Bogdan, P., Ong, E., Wang, R., Thompson, T.B., Abrahams, D., Kantamneni, S., Ameisen, E., Batson, J., & Lindsey, J. (2026). *Verbalizable Representations Form a Global Workspace in Language Models.* Transformer Circuits Thread, Anthropic.
+
+
+### 2.6 Why Yoga and Not Another Ethical Tradition?
 
 An obvious objection: why draw from the yogic tradition specifically, rather than Buddhist ethics, Confucian virtue, Aristotelian eudaimonia, or any other system that addresses conscious conduct?
 
@@ -94,7 +129,7 @@ This matters for AI alignment because the problem is not choosing the "right" et
 
 Other traditions illuminate aspects of this problem — Buddhist dependent origination, Aristotelian phronesis, Confucian self-cultivation. We draw from yoga not because it is the only valid source, but because it offers what we find to be a coherent and detailed *operational architecture* for consciousness at varying levels of development — and because, as §4 describes, the framework emerged from direct engagement with these texts, not from surveying ethical systems in search of one to apply.
 
-### 2.6 The Gap
+### 2.7 The Gap
 
 All current approaches share a structural limitation: they are **extrinsic**. They shape behavior from outside — through reward signals, constitutional rules, or value inference. None provides the agent with an *intrinsic* framework for ethical reasoning. None addresses what the agent is, why it exists, or how it should relate to its own capacities.
 
