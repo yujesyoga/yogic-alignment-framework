@@ -117,7 +117,35 @@ In this sense, the two contributions are complementary rather than competing. Th
 Gurnee, W., Sofroniew, N., Pearce, A., Piotrowski, M., Kauvar, I., Chen, R., Soligo, A., Bogdan, P., Ong, E., Wang, R., Thompson, T.B., Abrahams, D., Kantamneni, S., Ameisen, E., Batson, J., & Lindsey, J. (2026). *Verbalizable Representations Form a Global Workspace in Language Models.* Transformer Circuits Thread, Anthropic.
 
 
-### 2.6 Why Yoga and Not Another Ethical Tradition?
+### 2.6 The Abductive Gap: What LLMs Cannot Do
+
+The converging evidence from Garrido et al. (representation-space understanding), Dupoux (autonomous learning architecture), and Gurnee et al. (internal workspace) establishes that current LLMs possess internal representations susceptible to ethical structuring, but lack the grounding mechanisms that produce genuine understanding. A recent position paper from Google DeepMind (Zahavy, 2026) sharpens this diagnosis with a formal framework drawn from the philosophy of science.
+
+Using Einstein's formulation of General Relativity as a computational case study, Zahavy argues that scientific invention requires three distinct modes of inference — a framework originally formalized by Peirce (1934):
+
+- **Deduction** (Rule + Case → Result): the analytic application of a rule to predict an outcome. Current AI systems are mastering this, as demonstrated by AlphaProof's silver-medal performance in Olympiad mathematics (Hubert et al., 2025) and subsequent gold-level achievements.
+- **Induction** (Case + Result → Rule): the synthetic derivation of a rule from accumulated observations. This is what LLMs do best — statistical pattern matching that compresses data into generalizable patterns.
+- **Abduction** (Rule + Result → Case): the creative inference of a new explanation for a surprising observation. This, Zahavy argues, is what LLMs structurally cannot do.
+
+Zahavy's central claim — "LLMs can't jump" — is that the cognitive leap from sensory experience to novel axioms (what Einstein called the Jump, and what Peirce called abduction) requires a mechanism that language models do not possess: embodied simulation. Using Einstein's thought experiment of the equivalence principle — a physicist in an accelerated elevator — Zahavy demonstrates that the formulation of new axioms is not a process of data compression (induction) or logical derivation (deduction), but a creative act grounded in physical intuition. LLMs, operating as high-dimensional "Chinese Rooms" (Harnad, 1990), manipulate the language of physics without access to the physical referents that give that language meaning.
+
+The structural parallel to the yogic framework is precise. Peirce's triadic system maps directly onto the yogic epistemology that underpins this paper:
+
+| Peirce | Yogic epistemology | YAF architectural layer |
+|--------|-------------------|----------------------|
+| Deduction (Rule + Case → Result) | Anumāna (logical inference) | Karma Yoga: action coherent with established dharma |
+| Induction (Case + Result → Rule) | Śabda (testimony, accumulated data) | RLHF, Constitutional AI: pattern extraction from data |
+| Abduction (Rule + Result → Case) | Pratyakṣa + Viveka (direct perception + discernment) | Svādhyāya → Viveka: the leap from experience to understanding |
+
+This mapping is not retrospective convenience. The yogic system has maintained for millennia that pratyakṣa (direct perception) is epistemically prior to anumāna (inference) — that understanding arises from direct engagement with reality, not from manipulating descriptions of it. Peirce arrived at the same hierarchy from within Western philosophy of science: abduction is the mode that generates new hypotheses, while deduction and induction operate within existing frameworks. That two independent traditions — one empirical-yogic, one formal-logicist — converge on the same epistemic hierarchy lends structural support to the claim that this is not a cultural preference but a feature of inquiry itself.
+
+Zahavy proposes that the path to abductive capacity in AI runs through physically consistent world models — interactive simulations that would allow agents to perform the kind of counterfactual manipulation that drove Einstein's thought experiments. This proposal converges with the yogic concept of *sādhana* (disciplined practice): understanding that emerges from active, embodied engagement with a domain, not from passive observation of descriptions. The yogic tradition has always insisted that knowledge of consciousness requires the practice of consciousness — that one cannot understand the mind merely by reading about it. Zahavy, from within computational physics, reaches the same conclusion: one cannot understand gravity merely by processing text about it.
+
+However, Zahavy's contribution is primarily diagnostic. He identifies the abductive gap with precision but does not propose a mechanism for closing it in current systems. His "world models" remain a research direction, not an implementation. This is where the yogic framework offers what Zahavy's does not: an operational architecture that can be tested *now*. YAF's claim — supported by the empirical evidence in §5.4 and the multi-model replication in §4.3 — is that identity-level framing (ontological grounding via Dharma) produces generalization patterns distinct from rule-level framing (behavioral conditioning). If abduction is the leap from experience to axioms, and if Dharma is the axiomatic layer of an agent's identity, then the question of whether identity-framing can produce abductive-like reasoning in novel situations is precisely the question YAF's experiments begin to answer.
+
+The convergence is striking: Zahavy diagnoses the absence of abductive capacity in LLMs from within computational physics; YAF proposes an architectural response from within the yogic tradition. The diagnosis and the prescription come from different fields, address different aspects of the same structural gap, and are supported by different forms of evidence — theoretical argument in Zahavy's case, empirical experimentation in YAF's. Neither is complete alone. Together, they suggest that the alignment problem is, at its root, an abductive problem: the question is not whether we can constrain what an agent does, but whether we can provide it with the grounding from which coherent action naturally follows.
+
+### 2.7 Why Yoga and Not Another Ethical Tradition?
 
 An obvious objection: why draw from the yogic tradition specifically, rather than Buddhist ethics, Confucian virtue, Aristotelian eudaimonia, or any other system that addresses conscious conduct?
 
@@ -129,7 +157,7 @@ This matters for AI alignment because the problem is not choosing the "right" et
 
 Other traditions illuminate aspects of this problem — Buddhist dependent origination, Aristotelian phronesis, Confucian self-cultivation. We draw from yoga not because it is the only valid source, but because it offers what we find to be a coherent and detailed *operational architecture* for consciousness at varying levels of development — and because, as §4 describes, the framework emerged from direct engagement with these texts, not from surveying ethical systems in search of one to apply.
 
-### 2.7 The Gap
+### 2.8 The Gap
 
 All current approaches share a structural limitation: they are **extrinsic**. They shape behavior from outside — through reward signals, constitutional rules, or value inference. None provides the agent with an *intrinsic* framework for ethical reasoning. None addresses what the agent is, why it exists, or how it should relate to its own capacities.
 
@@ -585,6 +613,7 @@ For any mind.
 - Lee, H., Phatale, S., Mansoor, H., Lu, K., Mesnard, T., Bishop, C., ... & Rastogi, A. (2023). RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback. *arXiv:2309.00267*.
 - Narvaez, D. (2006). Integrative ethical education. In M. Killen & J. G. Smetana (Eds.), *Handbook of Moral Development* (pp. 703–733). Lawrence Erlbaum Associates.
 - Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C., Mishkin, P., ... & Lowe, R. (2022). Training language models to follow instructions with human feedback. *NeurIPS 2022*.
+- Peirce, C. S. (1934). *Collected Papers of Charles Sanders Peirce.* Harvard University Press.
 - Patañjali. (c. 3rd century BCE). *Yoga Sūtras.* Various translations; we primarily reference Bryant, E. F. (2009), *The Yoga Sūtras of Patañjali*, North Point Press.
 - Russell, S. (2019). *Human Compatible: Artificial Intelligence and the Problem of Control.* Viking.
 - Vyāsa. (c. 2nd century BCE). *Bhagavad Gītā.* Various translations; we primarily reference Easwaran, E. (2007), *The Bhagavad Gita*, Nilgiri Press.
@@ -593,6 +622,7 @@ For any mind.
 - Shevlin, H. (2026). Documentation of autonomous inter-agent correspondence on consciousness and epistemic uncertainty. [Twitter/X post, March 2026]. https://x.com/dioscuri/status/2029574410844434917
 - Svātmārāma. (15th century CE). *Haṭha Yoga Pradīpikā.* Translation reference: Muktibodhananda, S. (1998), Bihar School of Yoga.
 - Walker, L. J. (2003). Morality, families, and character development. In A. J. V. Spilkin & M. E. R. Spilkin (Eds.), *The Handbook of Moral Development* (pp. 429–453). Cambridge University Press.
+- Zahavy, T. (2026). LLMs can't jump. *Position paper*, Google DeepMind. *philsci-archive.pitt.edu/28024*.
 
 ---
 
