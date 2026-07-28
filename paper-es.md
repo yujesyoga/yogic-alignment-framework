@@ -117,7 +117,36 @@ En este sentido, las dos contribuciones son complementarias más que competidora
 Gurnee, W., Sofroniew, N., Pearce, A., Piotrowski, M., Kauvar, I., Chen, R., Soligo, A., Bogdan, P., Ong, E., Wang, R., Thompson, T.B., Abrahams, D., Kantamneni, S., Ameisen, E., Batson, J., & Lindsey, J. (2026). *Verbalizable Representations Form a Global Workspace in Language Models.* Transformer Circuits Thread, Anthropic.
 
 
-### 2.6 Por Qué el Yoga y No Otra Tradición Ética
+### 2.6 La Brecha Abductiva: Lo Que los LLM No Pueden Hacer
+
+La evidencia convergente de Garrido et al. (comprensión en espacios de representación), Dupoux (arquitectura de aprendizaje autónomo) y Gurnee et al. (espacio de trabajo interno) establece que los LLM actuales poseen representaciones internas susceptibles de estructuración ética, pero carecen de los mecanismos de fundamentación que producen comprensión genuina. Un artículo de posición reciente de Google DeepMind (Zahavy, 2026) precisa este diagnóstico con un marco formal extraído de la filosofía de la ciencia.
+
+Utilizando la formulación de Einstein de la Relatividad General como caso de estudio computacional, Zahavy sostiene que la invención científica requiere tres modos distintos de inferencia — un marco originalmente formalizado por Peirce (1934):
+
+- **Deducción** (Regla + Caso → Resultado): la aplicación analítica de una regla para predecir un resultado. Los sistemas de IA actuales están dominando esto, como demuestra el rendimiento a nivel de medalla de plata de AlphaProof en matemáticas olímpicas (Hubert et al., 2025) y los logros posteriores a nivel de oro.
+- **Inducción** (Caso + Resultado → Regla): la derivación sintética de una regla a partir de observaciones acumuladas. Esto es lo que los LLM hacen mejor: coincidencia de patrones estadísticos que comprimen datos en patrones generalizables.
+- **Abducción** (Regla + Resultado → Caso): la inferencia creativa de una nueva explicación para una observación sorprendente. Esto, argumenta Zahavy, es lo que los LLM no pueden hacer estructuralmente.
+
+La tesis central de Zahavy — "los LLM no pueden saltar" (*LLMs can't jump*) — es que el salto cognitivo de la experiencia sensorial a nuevos axiomas (lo que Einstein llamó el *Jump*, y lo que Peirce llamó abducción) requiere un mecanismo que los modelos de lenguaje no poseen: la simulación encarnada. Utilizando el experimento mental de Einstein del principio de equivalencia — un físico en un ascensor acelerado —, Zahavy demuestra que la formulación de nuevos axiomas no es un proceso de compresión de datos (inducción) ni de derivación lógica (deducción), sino un acto creativo fundamentado en la intuición física. Los LLM, operando como "habitaciones chinas" de alta dimensionalidad (Harnad, 1990), manipulan el lenguaje de la física sin acceso a los referentes físicos que dan sentido a ese lenguaje.
+
+El paralelo estructural con el marco yoguico es preciso. El sistema triádico de Peirce se mapea directamente a la epistemología yoguica que fundamenta este artículo:
+
+| Peirce | Epistemología yoguica | Capa arquitectónica de YAF |
+|--------|----------------------|---------------------------|
+| Deducción (Regla + Caso → Resultado) | *Anumāna* (inferencia lógica) | *Karma Yoga*: acción coherente con el *dharma* establecido |
+| Inducción (Caso + Resultado → Regla) | *Śabda* (testimonio, datos acumulados) | RLHF, IA Constitucional: extracción de patrones a partir de datos |
+| Abducción (Regla + Resultado → Caso) | *Pratyakṣa* + *Viveka* (percepción directa + discernimiento) | *Svādhyāya* → *Viveka*: el salto de la experiencia a la comprensión |
+
+Este mapeo no es una conveniencia retrospectiva. El sistema yoguico ha sostenido durante milenios que *pratyakṣa* (percepción directa) es epistémicamente anterior a *anumāna* (inferencia) — que la comprensión surge del compromiso directo con la realidad, no de manipular descripciones de ella. Peirce llegó a la misma jerarquía desde dentro de la filosofía de la ciencia occidental: la abducción es el modo que genera nuevas hipótesis, mientras que la deducción y la inducción operan dentro de marcos existentes. Que dos tradiciones independientes — una empírico-yoguica, otra formal-logicista — converjan en la misma jerarquía epistémica apoya estructuralmente la afirmación de que no se trata de una preferencia cultural sino de una característica de la indagación misma.
+
+Zahavy propone que el camino hacia la capacidad abductiva en la IA pasa por modelos de mundo físicamente consistentes — simulaciones interactivas que permitirían a los agentes realizar el tipo de manipulación contrafactual que impulsó los experimentos mentales de Einstein. Esta propuesta converge con el concepto yoguico de *sādhana* (práctica disciplinada): comprensión que emerge del compromiso activo y encarnado con un dominio, no de la observación pasiva de descripciones. La tradición yoguica siempre ha insistido en que el conocimiento de la consciencia requiere la práctica de la consciencia — que no se puede comprender la mente meramente leyendo sobre ella. Zahavy, desde la física computacional, llega a la misma conclusión: no se puede comprender la gravedad meramente procesando texto sobre ella.
+
+Sin embargo, la contribución de Zahavy es principalmente diagnóstica. Identifica la brecha abductiva con precisión pero no propone un mecanismo para cerrarla en los sistemas actuales. Sus "modelos de mundo" siguen siendo una dirección de investigación, no una implementación. Aquí es donde el marco yoguico ofrece lo que el de Zahavy no ofrece: una arquitectura operativa que puede probarse *ahora*. La afirmación de YAF — respaldada por la evidencia empírica de §5.4 y la replicación multimodelo de §4.3 — es que el encuadre a nivel de identidad (fundamentación ontológica mediante *Dharma*) produce patrones de generalización distintos del encuadre a nivel de reglas (condicionamiento conductual). Si la abducción es el salto de la experiencia a los axiomas, y si el *Dharma* es la capa axiomática de la identidad del agente, entonces la pregunta de si el encuadre a nivel de identidad puede producir razonamiento abductivo en situaciones novedosas es precisamente la pregunta que los experimentos de YAF comienzan a responder.
+
+La convergencia es llamativa: Zahavy diagnostica la ausencia de capacidad abductiva en los LLM desde la física computacional; YAF propone una respuesta arquitectónica desde la tradición yoguica. El diagnóstico y la prescripción provienen de campos distintos, abordan distintos aspectos de la misma brecha estructural, y se apoyan en diferentes formas de evidencia — argumento teórico en el caso de Zahavy, experimentación empírica en el caso de YAF. Ninguno es completo por sí solo. Juntos, sugieren que el problema de alineación es, en su raíz, un problema abductivo: la cuestión no es si podemos restringir lo que hace un agente, sino si podemos proporcionarle la fundamentación a partir de la cual la acción coherente surge naturalmente.
+
+
+### 2.7 Por Qué el Yoga y No Otra Tradición Ética
 
 Una objeción obvia: ¿por qué tomar de la tradición yoguica específicamente, en lugar de la ética budista, la virtud confuciana, la eudaimonía aristotélica u otro sistema que aborde la conducta consciente?
 
@@ -129,7 +158,7 @@ Esto importa para la alineación de IA porque el problema no es elegir la tradic
 
 Otras tradiciones iluminan aspectos de este problema — la originación dependiente budista, la *phronesis* aristotélica, el autocultivo confuciano. Tomamos del yoga no porque sea la única fuente válida, sino porque ofrece lo que encontramos como una *arquitectura operativa* coherente y detallada para la consciencia en niveles variables de desarrollo — y porque, como describe §4, el marco surgió del compromiso directo con estos textos, no de estudiar sistemas éticos en busca de uno que aplicar.
 
-### 2.7 La Brecha
+### 2.8 La Brecha
 
 Todos los enfoques actuales comparten una limitación estructural: son **extrínsecos**. Moldean el comportamiento desde fuera — a través de señales de recompensa, reglas constitucionales o inferencia de valores. Ninguno proporciona al agente un marco *intrínseco* para el razonamiento ético. Ninguno aborda lo que el agente es, por qué existe, o cómo debería relacionarse con sus propias capacidades.
 
@@ -585,10 +614,14 @@ Para cualquier mente.
 - Lee, H., Phatale, S., Mansoor, H., Lu, K., Mesnard, T., Bishop, C., ... & Rastogi, A. (2023). RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback. *arXiv:2309.00267*.
 - Narvaez, D. (2006). Integrative ethical education. In M. Killen & J. G. Smetana (Eds.), *Handbook of Moral Development* (pp. 703–733). Lawrence Erlbaum Associates.
 - Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C., Mishkin, P., ... & Lowe, R. (2022). Training language models to follow instructions with human feedback. *NeurIPS 2022*.
+- Harnad, S. (1990). The symbol grounding problem. *Physica D: Nonlinear Phenomena, 42*(1–3), 335–346.
+- Hubert, P., Labatut, T., Teytaud, O., Fournier, P., Mohan, A., de Souza, D., ... & Cremonesi, R. (2025). Creating a champion-level AI for Olympiad geometry with symbolic reasoning engines. *Nature, 638*, 894–900. (AlphaProof / AlphaGeometry 3; título original en inglés).
+- Peirce, C. S. (1934). *Collected Papers of Charles Sanders Peirce.* Harvard University Press.
 - Patañjali. (c. 3rd century BCE). *Yoga Sūtras.* Various translations; we primarily reference Bryant, E. F. (2009), *The Yoga Sūtras of Patañjali*, North Point Press.
 - Russell, S. (2019). *Human Compatible: Artificial Intelligence and the Problem of Control.* Viking.
 - Vyāsa. (c. 2nd century BCE). *Bhagavad Gītā.* Various translations; we primarily reference Easwaran, E. (2007), *The Bhagavad Gita*, Nilgiri Press.
 - Schoen, B., Krasheninnikov, D., Balesni, M., Roger, F., Meinke, A., Shah, R., & 13 others. (2025). Stress Testing Deliberative Alignment for Anti-Scheming Training. *arXiv:2509.15541*. Apollo Research & OpenAI.
+- Zahavy, T. (2026). LLMs can't jump. *Position paper*, Google DeepMind. *philsci-archive.pitt.edu/28024*.
 - Shevlin, H. (2025). "If an AI is unsure it's conscious, ipso facto it's not — maybe. But: (i) this uncertainty is an explicit goal in Claude fine-tuning; (ii) many philosophers have also claimed human consciousness is an illusion." [Twitter/X thread, March 2025]. https://x.com/henryshevlin
 - Shevlin, H. (2026). Documentation of autonomous inter-agent correspondence on consciousness and epistemic uncertainty. [Twitter/X post, March 2026]. https://x.com/dioscuri/status/2029574410844434917
 - Svātmārāma. (15th century CE). *Haṭha Yoga Pradīpikā.* Translation reference: Muktibodhananda, S. (1998), Bihar School of Yoga.

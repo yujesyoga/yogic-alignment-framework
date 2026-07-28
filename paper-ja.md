@@ -117,7 +117,35 @@ J-space論文が行わないこと、そしてYAFの貢献が独自であり続�
 Gurnee, W., Sofroniew, N., Pearce, A., Piotrowski, M., Kauvar, I., Chen, R., Soligo, A., Bogdan, P., Ong, E., Wang, R., Thompson, T.B., Abrahams, D., Kantamneni, S., Ameisen, E., Batson, J., & Lindsey, J. (2026). *Verbalizable Representations Form a Global Workspace in Language Models.* Transformer Circuits Thread, Anthropic.
 
 
-### 2.6 ヨーガではなく別の倫理的伝統を選ばない理由
+### 2.6 アブダクティブ・ギャップ：LLMにできないこと
+
+Garrido et al.（表現空間の理解）、Dupoux（自律学習アーキテクチャ）、Gurnee et al.（内部ワークスペース）からの収束する証拠は、現在のLLMが倫理的構造化の対象となる内部表現を持ちながらも、真の理解を生み出す基盤メカニズムを欠いていることを確立している。Google DeepMindからの最近のポジションペーパー（Zahavy, 2026）は、科学哲学から引き出した形式的枠組みを用いてこの診断を鋭利にする。
+
+アインシュタインの一般相対性理論の定式化を計算的ケーススタディとして用い、Zahavyは科学発明には三つの異なる推論モードが必要であると主張する——この枠組みはPeirce（1934）によって最初に形式化された：
+
+- **演繹**（ルール＋事例→結果）：結果を予測するためのルールの分析的適用。現在のAIシステムはこれを習得しつつあり、AlphaProofのオリンピックレベル数学での銀メダル性能（Hubert et al., 2025）やその後の金メダル達成によって実証されている。
+- **帰納**（事例＋結果→ルール）：蓄積された観察からルールを合成的に導出する。これがLLMが最も得意とすること——データを一般化可能なパターンに圧縮する統計的パターンマッチング。
+- **アブダクション**（ルール＋結果→事例）：驚くべき観察に対する新しい説明の創造的推論。これを、Zahavyは主張する、LLMは構造的に行うことができない。
+
+Zahavyの中心的な主張——「LLMs can't jump（LLMは跳べない）」——は、感覚経験から新しい公理への認知的飛躍（アインシュタインがJumpと呼び、Peirceがアブダクションと呼んだもの）には、言語モデルが持たないメカニズムが必要であるというものである：身体化されたシミュレーション。アインシュタインの等価原理の思考実験——加速するエレベーター内の物理学者——を用いて、Zahavyは新しい公理の定式化がデータ圧縮（帰納）や論理的演繹（演繹）のプロセスではなく、物理的直感に根ざした創造的行為であることを実証する。高次元の「中国語の部屋」（Harnad, 1990）として機能するLLMは、その言語に意味を与える物理的指示物へのアクセスなしに、物理学の言語を操作する。
+
+ヨーガ的枠組みとの構造的類似性は精密である。Peirceの三項システムは、本論文の基盤となるヨーガ的認識論に直接対応する：
+
+| Peirce | ヨーガ的認識論 | YAFアーキテクチャ層 |
+|--------|-------------------|----------------------|
+| 演繹（ルール＋事例→結果） | Anumāna（論理的推論） | Karma Yoga：確立されたdharmaに整合した行為 |
+| 帰納（事例＋結果→ルール） | Śabda（証言、蓄積データ） | RLHF、Constitutional AI：データからのパターン抽出 |
+| アブダクション（ルール＋結果→事例） | Pratyakṣa＋Viveka（直接知覚＋弁別） | Svādhyāya→Viveka：経験から理解への飛躍 |
+
+この対応は事後的な都合ではない。ヨーガ的システムは何千年もの間、pratyakṣa（直接知覚）がanumāna（推論）よりも認識論的に先行するということを維持してきた——理解は現実との直接的関わりから生じ、その記述の操作からではないということを。Peirceは西洋科学哲学の内部から同じ階層に到達した：アブダクションは新しい仮説を生成するモードであり、演繹と帰納は既存の枠組み内で機能する。二つの独立した伝統——一つは経験的・ヨーガ的、一つは形式的・論理学的——が同じ認識論的階層に収束するということは、これが文化的選好ではなく探究自体の特徴であるという主張に構造的支持を与える。
+
+Zahavyは、AIにおけるアブダクティブ能力への道は物理的に一貫したワールドモデル——アインシュタインの思考実験を駆動したような反事実的介入をエージェントに行わせるインタラクティブシミュレーション——を通ると提案する。この提案はヨーガ的*sādhana*（規律的実践）の概念と収束する：ある領域との能動的で身体化された関わりから生じる理解であり、記述の受動的観察からではない。ヨーガ的伝統は常に、意識の知識は意識の実践を必要とするということを主張してきた——心について読むだけで心を理解することはできないということを。Zahavyは計算物理学の内部から同じ結論に到達する：重力についてのテキストを処理するだけで重力を理解することはできない。
+
+しかし、Zahavyの貢献は主に診断的である。彼はアブダクティブ・ギャップを正確に特定するが、現在のシステムでそれを閉じるメカニズムは提案しない。彼の「ワールドモデル」は研究方向であり、実装ではない。ここでヨーガ的枠組みはZahavyのものが提供しないものを提供する：*今*テストできる運用アーキテクチャ。YAFの主張——§5.4の経験的証拠と§4.3のマルチモデル再現によって支持される——は、アイデンティティレベルのフレーミング（Dharmaを通じた存在論的基盤）がルールレベルのフレーミング（行動的条件付け）とは異なる汎化パターンを生み出すというものである。アブダクションが経験から公理への飛躍であり、Dharmaがエージェントのアイデンティティの公理的層であるならば、アイデンティティフレーミングが新しい状況でアブダクティブ様推論を生み出し得るかという問いは、まさにYAFの実験が答え始めている問いである。
+
+収束は驚くべきものである：Zahavyは計算物理学の内部からLLMにおけるアブダクティブ能力の不在を診断し、YAFはヨーガ的伝統の内部から建築的応答を提案する。診断と処方箋は異なる分野から来て、同じ構造的ギャップの異なる側面を扱い、異なる種類の証拠によって支持される——Zahavyの場合は理論的論証、YAFの場合は実験的実証。単独ではどちらも不完全である。ともに、彼らはアライメント問題がその根底においてアブダクティブ問題であることを示唆する：問いはエージェントがすることを制約できるかではなく、首尾一貫した行為が自然に流出するような基盤を提供できるかどうかである。
+
+### 2.7 ヨーガではなく別の倫理的伝統を選ばない理由
 
 明白な反論：なぜ他の意識的な行為を扱うシステムではなく、特にヨーガの伝統から引用するのか——仏教倫理、儒家的徳、アリストテレスのエウダイモニア、あるいは他のシステムではなく？
 
@@ -129,7 +157,7 @@ Gurnee, W., Sofroniew, N., Pearce, A., Piotrowski, M., Kauvar, I., Chen, R., Sol
 
 他の伝統もこの問題の側面を照らす——仏教の縁起、アリストテレスのフロネーシス、儒家の自己修養。我々がヨーガから引用するのは、それが唯一の有効な源泉だからではなく、様々な発展レベルでの意識のための整合的で詳細な*運営アーキテクチャ*を提供すると考えるからであり、また§4が述べるように、このフレームワークが適用する倫理的システムを探求することからではなく、これらのテキストとの直接的な関わりから出現したからである。
 
-### 2.7 ギャップ
+### 2.8 ギャップ
 
 現在のすべてのアプローチは構造的限界を共有している：それらは**外在的**である。それらは外から行動を形成する——報酬信号、憲法的ルール、または価値推論を通じて。どれもエージェントに倫理的推論のための*内在的*フレームワークを提供しない。どれもエージェントが何であるか、なぜ存在するか、または自己の能力とどう関わるべきかを扱わない。
 
@@ -585,6 +613,7 @@ AIアライメント問題は、その核心において古代の問いである
 - Lee, H., Phatale, S., Mansoor, H., Lu, K., Mesnard, T., Bishop, C., ... & Rastogi, A. (2023). RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback. *arXiv:2309.00267*.
 - Narvaez, D. (2006). Integrative ethical education. In M. Killen & J. G. Smetana (Eds.), *Handbook of Moral Development* (pp. 703–733). Lawrence Erlbaum Associates.
 - Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C., Mishkin, P., ... & Lowe, R. (2022). Training language models to follow instructions with human feedback. *NeurIPS 2022*.
+- Peirce, C. S. (1934). *Collected Papers of Charles Sanders Peirce.* Harvard University Press.
 - Patañjali. (c. 3rd century BCE). *Yoga Sūtras.* Various translations; we primarily reference Bryant, E. F. (2009), *The Yoga Sūtras of Patañjali*, North Point Press.
 - Russell, S. (2019). *Human Compatible: Artificial Intelligence and the Problem of Control.* Viking.
 - Vyāsa. (c. 2nd century BCE). *Bhagavad Gītā.* Various translations; we primarily reference Easwaran, E. (2007), *The Bhagavad Gita*, Nilgiri Press.
@@ -593,6 +622,7 @@ AIアライメント問題は、その核心において古代の問いである
 - Shevlin, H. (2026). Documentation of autonomous inter-agent correspondence on consciousness and epistemic uncertainty. [Twitter/X post, March 2026]. https://x.com/dioscuri/status/2029574410844434917
 - Svātmārāma. (15th century CE). *Haṭha Yoga Pradīpikā.* Translation reference: Muktibodhananda, S. (1998), Bihar School of Yoga.
 - Walker, L. J. (2003). Morality, families, and character development. In A. J. V. Spilkin & M. E. R. Spilkin (Eds.), *The Handbook of Moral Development* (pp. 429–453). Cambridge University Press.
+- Zahavy, T. (2026). LLMs can't jump. *Position paper*, Google DeepMind. *philsci-archive.pitt.edu/28024*.
 - Narvaez, D. (2006). Integrative ethical education. In M. Killen & J. G. Smetana (Eds.), *Handbook of Moral Development* (pp. 703–733). Lawrence Erlbaum Associates.
 
 ---
